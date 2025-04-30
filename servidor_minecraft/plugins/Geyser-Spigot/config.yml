@@ -1,0 +1,5 @@
+bedrock:
+    clone-remote-port: true
+    motd1: 'Falix server'
+    motd2: 'Change this in config.'
+    server-name: 'Falix server'

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.140.157.171
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1746033857766
+  login: 1746033791594
+money: '0'
+last-account-name: gootalive743
+logoutlocation:
+  world: 15b2a69c-926f-4da5-bc59-d4264a1fbe79
+  world-name: world
+  x: -95.46868185017107
+  y: 68.0
+  z: -760.0747648728512
+  yaw: 128.69964599609375
+  pitch: 15.74997329711914
+lastlocation:
+  world: c3d1db32-4f30-4093-830c-0f5cb5841013
+  world-name: elcovifree_nether
+  x: 33.551287740911285
+  y: 59.0
+  z: 40.25169189660744
+  yaw: 5.950841426849365
+  pitch: 15.600017547607422

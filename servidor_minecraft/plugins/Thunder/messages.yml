@@ -1,0 +1,18 @@
+messages:
+  prefix: '&e[Thunder] '
+  no_console: '&eThis command can only be used in game.'
+  reloaded: '&eThe core has successfully reloaded.'
+  invalid_arguments: '&eInvalid arguments, use &7/thunder help &eto see the avalible
+    commands.'
+  no_permission: '&cInsufficient permissions.'
+  welcome_message_text:
+  - '&8&m                                             '
+  - '&eBienvenido &7%player% &ea Elcovifree.'
+  - '&8&m                                             '
+  spawn_set: '&eThe spawn has successfully set.'
+  spawn_not_set: '&eThe spawn is not setted.'
+  healed: '&eYou have been healed.'
+  mode_survival: '&eYour gamemode changed to &7survival&e.'
+  mode_creative: '&eYour gamemode changed to &7creative&e.'
+  mode_adventure: '&eYour gamemode changed to &7adventure&e.'
+  mode_spectator: '&eYour gamemode changed to &7spectator&e.'

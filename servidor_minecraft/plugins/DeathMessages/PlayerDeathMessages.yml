@@ -1,0 +1,1769 @@
+# DeathMessages by Dreeam__ (Original by MrShawn/Joshb_/CosmoConsole[DeathMessagesPrime Author])
+#
+# All configs from this plugin has an auto updater. Meaning if I add a value in the config from updates,
+# the value will be automatically added without regenerating the configs.
+#
+# Player Death Messages Config
+#
+#Placeholders:
+# %player% - returns the player name
+# %player_display% - returns the custom display name of the player
+# %weapon% - returns a tooltip of the item name, lore, and enchantments
+# %killer% - returns the entity's name. If there is no name set, it will be the entity type.
+# %killer_display% - if the killer is a player, returns the display name of the player
+# %killer_type% - returns the entity type from Mobs.<Mob> in Messages.yml
+# %biome% - returns the biome name the player located
+# %world% - returns the world name
+# %world_environment% - returns the environment of the world (normal, nether, the_end) (These are configurable in Messages.yml (Environment))
+# %x% - returns the x position the player died at.
+# %y% - returns the y position the player died at.
+# %z% - returns the z position the player died at.
+# %distance% represents the distance between the player and the killer in blocks (if applicable)
+#
+#Text components:
+#
+# Using "::" in the messages will create text components.
+# Format as followed: Base text::Hover text::Action
+# Actions must start with either COMMAND:, or SUGGEST_COMMAND:
+# You can add lines in the hover messages like so "line one\nLine Two....."
+# Examples:
+# "%player% was killed by [%killer%::&cLocations: X:%x%, Y:%y%, Z:%z%::COMMAND::tppos %x% %y% %z%]"
+# "%player% was killed by [%killer%::&cLocations: X:%x%, Y:%y%, Z:%z%]"
+# "%player% was killed by [%killer%::&cLocations: X:%x%, Y:%y%, Z:%z%::SUGGEST_COMMAND::msg %player% lol noob]"
+#
+# Permissions Based Messages
+#
+# For victims that have a specific permission set, EX: deathmessages.premium, the death message
+# will be sent that is formatted as followed:
+# PERMISSION[YOUR.PERM.HERE]%player% dead lol
+#
+# For killers that have a specific permission set, EX: deathmessages.premium, the death message
+# will be sent that is formatted as followed:
+# PERMISSION_KILLER[YOUR.PERM.HERE]%killer% REKT %player%
+#
+# Players that are in a region (With WorldGuard hook enabled) and is defined below, will be sending a custom
+# region messages.
+# Formatted as followed: "REGION[REGION_NAME]%player% died in a region"
+# Example:
+#
+# Mobs:
+#   player:
+#     Melee:
+#       - "%player% was slain by %killer%"
+#       - "PERMISSION[deathmessages.premium]&6Premium %player% &fdied to %killer%
+#       - "REGION[spawn]Idiot %player% died in spawn lol"
+#       If the player has permission and in a region
+#       - "REGION[spawn]PERMISSION[deathmessages.premium]Idiot premium %player% died in spawn lol"
+#
+# To completely remove the message for a certain death. Configure as followed:
+# Natrual-Death:
+#   Bed: []
+# or
+# Mobs:
+#   Creeper:
+#     Solo:
+#       Explosion: []
+
+# Due for there being no cure for laziness, this option ignores everything in the Mobs section and makes all messages
+# appear the same.
+
+Basic-Mode:
+  Enabled: false
+  Solo:
+    Projectile-Arrow:
+    - '%player% recibió un tiro de %killer% con %weapon%. El mundo aplaude tu sacrificio'
+    Explosion:
+    - '%player% voló por los aires gracias a %killer%. ¿Era dinamita o tu ego?'
+    Projectile-Fireball:
+    - '%player% fue incinerado por %killer% con %weapon%. ¿Quién dijo "juegos de fuego"?'
+    Projectile-ShulkerBullet:
+    - '%player% recibió una paliza cuántica de %killer%. Física 1 - %player% 0'
+    Projectile-Trident:
+    - '%player% fue espetado como aceituna por %killer% con %weapon%. Bon appetit!'
+    Magic:
+    - '%player% conoció la magia oscura de %killer%. Abracadabra, muerto'
+    Sonic-Boom:
+    - '%player% fue desintegrado por el alarido de %killer%. Calladito te ves más
+      bonito'
+    Weapon:
+    - '%player% fue masacrado por %killer% con %weapon%. Hasta los Sims tienen mejor
+      IA'
+    Melee:
+    - '%player% recibió una paliza de %killer%. Ni en el kinder te daban así'
+    Contact:
+    - '%player% se abrazó a un cactus gracias a %killer%. Amor espinoso'
+  Gang:
+    Projectile-Arrow:
+    - '%player% recibió tiroteo grupal de %killer%. Modo queso suizo activado'
+    Explosion:
+    - El squad de %killer% hizo piña con %player%. Boom colectivo
+    Projectile-Fireball:
+    - '%player% fue quemado en grupo por %killer%. BBQ humana'
+    Projectile-ShulkerBullet:
+    - 'El clan %killer% jugó al pinball con %player%. High score: 0 vidas'
+    Projectile-Trident:
+    - '%player% fue cazado como foca por %killer%. PETA está en camino'
+    Magic:
+    - El aquelarre de %killer% hizo hechizo grupal en %player%. Abracadabra-muerto
+    Sonic-Boom:
+    - '%player% recibió coro infernal de %killer%. ¿Era concierto de reggaeton?'
+    Weapon:
+    - '%player% fue linchado por %killer% con %weapon%. Justicia de manada'
+    Melee:
+    - '%player% recibió paliza grupal de %killer%. Ni el metro a las 6pm'
+    Contact:
+    - '%player% fue cactusizado por el grupo de %killer%. Team building doloroso'
+Natural-Cause:
+  Bed:
+  - '%player% decidió acurrucarse en la cama de %killer%... sin saber que era de una
+    sola noche en el %world_environment%'
+  Respawn-Anchor:
+  - '%player% invadió el espacio personal de %killer%... y su ancla de respawn le
+    recordó que no hay segundas oportunidades en el %world_environment%'
+  Contact:
+  - '%player% aprendió por las malas que los cactus no dan abrazos... solo perforaciones
+    gratis gracias a %killer%'
+  Melee:
+  - '%player% fue aplastado por el «miembro» más letal de %killer%... la biología
+    se volvió mortal'
+  Projectile-Unknown:
+  - '%player% recibió un disparo de %killer%... quien claramente no entendió el concepto
+    de «juego amistoso»'
+  Projectile-Arrow:
+  - '%player% fue el blanco perfecto para %killer% y su %weapon%... al menos murió
+    siendo alguien «especial»'
+  Projectile-Egg:
+  - '%player% egged themselves'
+  Projectile-EnderPearl:
+  - '%player% shot themselves'
+  Projectile-Fireball:
+  - '%player% recibió una cálida sorpresa de %killer%... literalmente, hasta se derritió'
+  Projectile-FishHook:
+  - '%player% got a fishhook caught in their head'
+  Projectile-Snowball:
+  - '%player% fue golpeado en la cabeza con una bola de nieve... la muerte más fría
+    e irónica del %world_environment% por %killer%'
+  Projectile-Trident:
+  - '%player% fue ensartado como una brocheta por %killer%... ya planea la barbacoa'
+  Suffocation:
+  - '%player% aprendió que las paredes no solo oprimen emociones... también cuellos
+    mientras peleaba con %killer_display%'
+  Fall:
+  - '%player% voló sin alas gracias a %killer%... el aterrizaje fue menos espectacular'
+  Climbable:
+  - '%player% escaló el %climbable%... hacia el inframundo'
+  Fire:
+  - '%player% bailó como Michael Jackson en Thriller. Demasiado literal'
+  Fire-Tick:
+  - '%player% se convirtió en BBQ humana. Alguien traiga la salsa'
+  Melting:
+  - '%player% se derritió como helado en verano. Bye bye sugar'
+  Lava:
+  - '%player% probó el jacuzzi volcánico. 10/10 en TripAdvisor del infierno'
+  Drowning:
+  - '%player% olvidó que los humanos no son peces. Finding Nemo lied'
+  Explosion:
+  - '%player% hizo boom. ¿Era un villano de caricatura?'
+  TNT:
+  - '%player% jugó con fuego... y TNT. Rest in pieces'
+  Firework:
+  - '%player% terminó con estrellitas en los ojos... literalmente'
+  End-Crystal:
+  - '%player% y el end-crystal: historia de amor explosiva'
+  Void:
+  - '%player% hizo viaje interestelar sin nave. Adiós, astronauta'
+  Lightning:
+  - '%player% conoció a Zeus. El rayo del Olimpo no perdona'
+  Suicide:
+  - '%player% optó por el modo hardcore de la vida'
+  Starvation:
+  - '%player% hizo dieta extrema. Ahora es esqueleto fashion'
+  Poison:
+  - '%player% jugó a ser Romeo con veneno. El final es igual'
+  Magic:
+  - '%player% probó magia negra. El resultado fue... oscuro'
+  Wither:
+  - '%player% se desintegró con estilo gótico. Bye, emo'
+  Falling-Block:
+  - '%player% conoció un %block% íntimamente. Ahora son uno'
+  Dragon-Breath:
+  - '%player% probó el aliento de dragón. No era Listerine'
+  Custom:
+  - '%player% murió de originalidad. Todos recordarán... ¿o no?'
+  Fly-Into-Wall:
+  - '%player% creyó ser Superman. Spoiler: no lo era'
+  Hot-Floor:
+  - '%player% bailó salsa en magma. Pies quemados level: Diablo'
+  Cramming:
+  - '%player% probó el metro a las 8am. Demasiado real'
+  Dryout:
+  - '%player% fue pez fuera del agua. Literalmente'
+  Freeze:
+  - '%player% se convirtió en popsicle humano. ¿De qué sabor?'
+  Thorns:
+  - '%player% abrazó un rosal de metal. Amor espinoso 2.0'
+  Kill:
+  - '%player% fue borrado del mapa. GG WP'
+  World-Border:
+  - '%player% descubrió que el mundo ES plano. Edge achieved'
+      # Hook related deaths
+  CombatLogX-Kill:
+  - '%player% wants to escape reality, but was still sent to another dimension -.-'
+  Unknown:
+  - '%player% murió de forma misteriosa. Ni siquiera el log sabe qué pasó'
+Mobs:
+  elderguardian:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue alcanzado por un flechazo de %killer% usando %weapon%. Parece
+        que el mar también lo odia'
+      Weapon:
+      - '%player% fue aniquilado por un %killer% con %weapon%. Ni el océano pudo salvarlo'
+      Melee:
+      - '%player% fue destrozado por un %killer%. No hay forma de huir de la muerte'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue brutalmente apedreado con flechas'
+      Weapon:
+      - '%player% murio por %weapon%'
+      Melee:
+      - '%player% fue brutalmente aplastado por el aparato reproductor de %killer%'
+  witherskeleton:
+    Solo:
+      Projectile-Arrow:
+      - '%player% recibió un flechazo de un %killer% usando %weapon%. Bien jugado,
+        pero no importa, ya no está'
+      Weapon:
+      - '%player% fue triturado por un %killer% con %weapon%. Todos esos años de jugar
+        Minecraft, y esta es la manera en que se va'
+      Melee:
+      - '%player% fue aniquilado por un %killer%. Eso es todo, se acabó'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue rodeado por un grupo de %killer%s. El primer tiro con %weapon%
+        lo mandó a la tumba'
+      Weapon:
+      - '%player% fue rodeado por %killer%s con %weapon%. Ahora están todos riendo,
+        pero él ya no lo sabe'
+      Melee:
+      - '%player% fue exterminado por un montón de %killer%s. Ni siquiera vio lo que
+        pasó'
+  stray:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue alcanzado por un tiro de %killer% usando %weapon%. Parece que
+        la suerte no estaba de su lado.'
+      Weapon:
+      - '%player% fue ejecutado por un %killer% usando %weapon%. Lo bueno es que ya
+        no sufre.'
+      Melee:
+      - '%player% fue aplastado por un %killer%. Y ni siquiera tuvo tiempo de quejarse.'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue rodeado por un montón de %killer%. Un flechazo de %weapon% y
+        ya no está.'
+      Weapon:
+      - '%player% fue rodeado por un ejército de %killer%s. Un golpe con %weapon%
+        y se fue.'
+      Melee:
+      - '%player% fue aniquilado por un grupo de %killer%s. Una paliza tan épica que
+        ni siquiera lo vio venir.'
+  husk:
+    Solo:
+      Projectile-Arrow:
+      - '%player% recibió un disparo de %killer% usando %weapon%. Parece que el desierto
+        también lo odiaba.'
+      Weapon:
+      - '%player% fue pulverizado por un %killer% usando %weapon%. Ojalá haya sido
+        rápido.'
+      Melee:
+      - '%player% fue aplastado por un %killer%. Y ni siquiera pudo gritar.'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue rodeado por un montón de %killer%s. Y uno lo mató con %weapon%.
+        El resto solo observaba.'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. ¿Alguien más quiere su
+        turno?'
+      Melee:
+      - '%player% fue masacrado por un ejército de %killer%s. Un grupo de locos, ni
+        siquiera se lo vio venir.'
+  zombievillager:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue atravesado por un %killer% con %weapon%. ¿Quién dijo que los
+        zombies no saben usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura zombie
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de zombies
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria zombie
+        no perdona'
+  skeletonhorse:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue pateado al más allá por un %killer% con %weapon%. Ni el veterinario
+        lo salva'
+      Weapon:
+      - '%player% fue pisoteado por un %killer% con %weapon%. La caballería esquelética
+        no tiene piedad'
+      Melee:
+      - '%player% fue convertido en puré por un %killer%. Ahora es comida para gusanos
+        premium'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue masacrado por una estampida de %killer%s con %weapon%. El apocalipsis
+        equino ha llegado'
+      Weapon:
+      - '%player% fue aplastado por una manada de %killer%s con %weapon%. El rodeo
+        infernal está servido'
+      Melee:
+      - '%player% fue reducido a polvo por un grupo de %killer%s. La cabalgata del
+        inframundo no deja testigos'
+  zombiehorse:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue convertido en alimento para caballos por un %killer% con %weapon%.
+        ¿Quién dijo que los muertos no montan?'
+      Weapon:
+      - '%player% fue devorado por un %killer% con %weapon%. El pony apocalíptico
+        tiene hambre'
+      Melee:
+      - '%player% fue pisoteado hasta la muerte por un %killer%. El semental zombie
+        quería jugar'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue destrozado por una manada de %killer%s con %weapon%. La caballería
+        putrefacta ataca'
+      Weapon:
+      - '%player% fue masticado por una horda de %killer%s con %weapon%. El derby
+        zombie no tiene reglas'
+      Melee:
+      - '%player% fue convertido en papilla por un grupo de %killer%s. El rodeo de
+        los muertos vivientes'
+  armorstand:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue asesinado por un maniquí con %weapon%. ¿Quién es el dummy ahora?'
+      Weapon:
+      - '%player% fue eliminado por un %killer% con %weapon%. La revolución de los
+        maniquíes ha comenzado'
+      Melee:
+      - '%player% fue aplastado por un %killer%. Hasta los muebles te odian'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por un ejército de %killer%s con %weapon%. La rebelión
+        de IKEA'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. Los maniquíes están hartos
+        de ser golpeados'
+      Melee:
+      - '%player% fue masacrado por un grupo de %killer%s. La venganza del departamento
+        de decoración'
+  donkey:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue pateado al otro mundo por un %killer% con %weapon%. Shrek estaría
+        orgulloso'
+      Weapon:
+      - '%player% fue demolido por un %killer% con %weapon%. La venganza de Burro
+        es dulce'
+      Melee:
+      - '%player% fue convertido en waffle por un %killer%. ¿Quién es el burro ahora?'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue masacrado por una estampida de %killer%s con %weapon%. La revolución
+        de los burros ha comenzado'
+      Weapon:
+      - '%player% fue aplastado por una manada de %killer%s con %weapon%. El sindicato
+        de burros contraataca'
+      Melee:
+      - '%player% fue reducido a papilla por un grupo de %killer%s. La venganza de
+        los transportistas de carga'
+  mule:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue eliminado por una %killer% con %weapon%. La mula tenía un día
+        malo'
+      Weapon:
+      - '%player% fue triturado por una %killer% con %weapon%. ¿Quién es el híbrido
+        ahora?'
+      Melee:
+      - '%player% fue convertido en puré por una %killer%. La venganza del animal
+        de carga'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue destrozado por un grupo de %killer%s con %weapon%. El sindicato
+        de transportistas ataca'
+      Weapon:
+      - '%player% fue aplastado por una manada de %killer%s con %weapon%. La rebelión
+        de las bestias de carga'
+      Melee:
+      - '%player% fue pulverizado por un grupo de %killer%s. La revolución de los
+        híbridos ha comenzado'
+  evoker:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue convertido en alfiletero por un %killer% con %weapon%. La magia
+        es más fuerte que tus reflejos'
+      Magic:
+      - '%player% fue desintegrado por la magia de %killer%. Wingardium Levimuerto'
+      Weapon:
+      - '%player% fue ejecutado por un %killer% con %weapon%. Abracadabra y desapareces'
+      Melee:
+      - '%player% fue borrado por un %killer%. La magia negra siempre gana'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por un aquelarre de %killer%s con %weapon%. La secta
+        mágica ataca'
+      Magic:
+      - '%player% fue pulverizado por la magia de varios %killer%s. Hogwarts se quedó
+        corto'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El círculo de hechiceros
+        no perdona'
+      Melee:
+      - '%player% fue eliminado por un grupo de %killer%s. La convención de magos
+        oscuros fue un éxito'
+  vex:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue atravesado por un %killer% con %weapon%. Hasta Casper tiene
+        mejor puntería'
+      Weapon:
+      - '%player% fue eliminado por un %killer% con %weapon%. Los fantasmitas ya no
+        son tan amigables'
+      Melee:
+      - '%player% fue exterminado por un %killer%. El espíritu chocarrero se llevó
+        tu alma'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una nube de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  vindicator:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue cazado por un %killer% con %weapon%. La justicia aldeana es
+        implacable'
+      Weapon:
+      - '%player% fue partido en dos por un %killer% con %weapon%. El hacha de la
+        venganza ha caído'
+      Melee:
+      - '%player% fue ejecutado por un %killer%. La ira de la aldea ha sido satisfecha'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. El comité
+        de venganza ha decidido'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. La purga aldeana ha
+        comenzado'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La justicia popular no
+        necesita juicio'
+  illusioner:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue engañado y eliminado por un %killer% con %weapon%. La última
+        ilusión fue tu vida'
+      Weapon:
+      - '%player% fue trucidado por un %killer% con %weapon%. El show de magia salió
+        mal'
+      Melee:
+      - '%player% fue borrado por un %killer%. El truco final fue tu desaparición'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue víctima del espectáculo de %killer%s con %weapon%. El circo
+        de la muerte'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. La función de magia negra
+        fue un éxito'
+      Melee:
+      - '%player% fue aniquilado por un grupo de %killer%s. El público aplaude tu
+        muerte'
+  creeper:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue convertido en colador por un %killer% con %weapon%. Ni en el
+        baño te humillan tanto'
+      Weapon:
+      - '%player% fue rebanado por un %killer% con %weapon%. Tu madre estaría decepcionada'
+      Explosion:
+      - '%player% fue atomizado por un %killer%. Al menos duraste más que tu dignidad'
+      Melee:
+      - '%player% fue masacrado por un %killer%. ¿También te dejas pegar por las plantas?'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por %killer%s. La morgue tendrá trabajo extra hoy'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s. Ni en el matadero son tan brutales'
+      Explosion:
+      - '%player% fue reducido a átomos por %killer%s. Ahora eres más útil como abono'
+      Melee:
+      - '%player% fue destrozado por %killer%s. Tu lápida dirá: "Aquí yace un noob"'
+  skeleton:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue perforado por un %killer%. Ahora tienes más agujeros que tu
+        cerebro'
+      Weapon:
+      - '%player% fue desmembrado por un %killer%. Ni el forense podrá identificarte'
+      Melee:
+      - '%player% fue apaleado por un %killer%. ¿También te gana un montón de huesos?'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue convertido en alfiletero por %killer%s. La acupuntura extrema'
+      Weapon:
+      - '%player% fue triturado por %killer%s. Ahora eres papilla para gusanos'
+      Melee:
+      - '%player% fue masacrado por %killer%s. Darwin estaría decepcionado'
+  spider:
+    Solo:
+      Projectile-Arrow:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Weapon:
+      - '%player% was slain by a %killer% somehow using %weapon%'
+      Melee:
+      - '%player% was slain by a %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Weapon:
+      - '%player% was ganed up on by some %killer%''s! One wacked them with %weapon%'
+      Melee:
+      - '%player% was slain by a bunch of %killer%''s'
+  giant:
+    Solo:
+      Projectile-Arrow:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Weapon:
+      - '%player% was slain by a %killer% somehow using %weapon%'
+      Melee:
+      - '%player% was slain by a %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Weapon:
+      - '%player% was ganed up on by some %killer%''s! One wacked them with %weapon%'
+      Melee:
+      - '%player% was slain by a bunch of %killer%''s'
+  zombie:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue cazado por un %killer%. Hasta los muertos tienen mejor puntería'
+      Weapon:
+      - '%player% fue destripado por un %killer%. Tu cerebro era demasiado pequeño
+        para interesarle'
+      Melee:
+      - '%player% fue devorado por un %killer%. Al menos moriste alimentando a alguien'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por %killer%s. La fiesta zombie y tú eras el buffet'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s. Ni en el apocalipsis sobrevivirías'
+      Melee:
+      - '%player% fue desmembrado por %killer%s. Walking Dead te rechazó por incompetente'
+  slime:
+    Solo:
+      Projectile-Arrow:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Weapon:
+      - '%player% was slain by a %killer% somehow using %weapon%'
+      Melee:
+      - '%player% was slain by a %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Weapon:
+      - '%player% was ganed up on by some %killer%''s! One wacked them with %weapon%'
+      Melee:
+      - '%player% was slain by a bunch of %killer%''s'
+  ghast:
+    Solo:
+      Projectile-Arrow:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Projectile-Fireball:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Weapon:
+      - '%player% was slain by a %killer% somehow using %weapon%'
+      Melee:
+      - '%player% was slain by a %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Projectile-Fireball:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Weapon:
+      - '%player% was ganed up on by some %killer%''s! One wacked them with %weapon%'
+      Melee:
+      - '%player% was slain by a bunch of %killer%''s'
+  pigzombie:
+    Solo:
+      Projectile-Arrow:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Weapon:
+      - '%player% was slain by a %killer% somehow using %weapon%'
+      Melee:
+      - '%player% was slain by a %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Weapon:
+      - '%player% was ganed up on by some %killer%''s! One wacked them with %weapon%'
+      Melee:
+      - '%player% was slain by a bunch of %killer%''s'
+  enderman:
+    Solo:
+      Projectile-Arrow:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Weapon:
+      - '%player% was slain by a %killer% somehow using %weapon%'
+      Melee:
+      - '%player% was slain by a %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Weapon:
+      - '%player% was ganed up on by some %killer%''s! One wacked them with %weapon%'
+      Melee:
+      - '%player% was slain by a bunch of %killer%''s'
+  cavespider:
+    Solo:
+      Projectile-Arrow:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Weapon:
+      - '%player% was slain by a %killer% somehow using %weapon%'
+      Melee:
+      - '%player% was slain by a %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Weapon:
+      - '%player% was ganed up on by some %killer%''s! One wacked them with %weapon%'
+      Melee:
+      - '%player% was slain by a bunch of %killer%''s'
+  silverfish:
+    Solo:
+      Projectile-Arrow:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Weapon:
+      - '%player% was slain by a %killer% somehow using %weapon%'
+      Melee:
+      - '%player% was slain by a %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Weapon:
+      - '%player% was ganed up on by some %killer%''s! One wacked them with %weapon%'
+      Melee:
+      - '%player% was slain by a bunch of %killer%''s'
+  blaze:
+    Solo:
+      Projectile-Arrow:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Projectile-Fireball:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Weapon:
+      - '%player% was slain by a %killer% somehow using %weapon%'
+      Melee:
+      - '%player% was slain by a %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Projectile-Fireball:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Weapon:
+      - '%player% was ganed up on by some %killer%''s! One wacked them with %weapon%'
+      Melee:
+      - '%player% was slain by a bunch of %killer%''s'
+  magmacube:
+    Solo:
+      Projectile-Arrow:
+      - '%player% was shot by a %killer% somehow using %weapon%'
+      Weapon:
+      - '%player% was slain by a %killer% somehow using %weapon%'
+      Melee:
+      - '%player% was slain by a %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% was ganged up on by some %killer%! One shot them with %weapon%'
+      Weapon:
+      - '%player% was ganed up on by some %killer%''s! One wacked them with %weapon%'
+      Melee:
+      - '%player% was slain by a bunch of %killer%''s'
+  enderdragon:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue rostizado por un %killer%. Game of Thrones tiene mejores dragones'
+      Weapon:
+      - '%player% fue pulverizado por un %killer%. Ni siquiera serviste de bocadillo'
+      Melee:
+      - '%player% fue aniquilado por un %killer%. ¿También te da miedo la oscuridad?'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue incinerado por %killer%s. BBQ humana premium'
+      Weapon:
+      - '%player% fue triturado por %killer%s. Ni las lagartijas son tan patéticas'
+      Melee:
+      - '%player% fue exterminado por %killer%s. Hasta los NPCs duran más'
+  wither:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue desintegrado por un %killer%. La muerte te rechazó por mediocre'
+      Weapon:
+      - '%player% fue borrado por un %killer%. Ni el respawn te quiere de vuelta'
+      Explosion:
+      - '%player% fue atomizado por un %killer%. Tu existencia era igual de tóxica'
+      Projectile-Fireball:
+      - '%player% died to a wither skull'
+      Melee:
+      - '%player% fue eliminado por un %killer%. Hasta los esqueletos tienen más vida'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue masacrado por %killer%s. El infierno tiene estándares más altos'
+      Weapon:
+      - '%player% fue aniquilado por %killer%s. Ni el diablo acepta noobs'
+      Explosion:
+      - '%player% fue vaporizado por %killer%s. Tu K/D es más negativo que tu autoestima'
+      Projectile-Fireball:
+      - '%player% died to some wither skulls'
+      Melee:
+      - '%player% fue exterminado por %killer%s. Error 404: Habilidad no encontrada'
+  bat:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        murciélagos no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura murciélago
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de murciélagos
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria murciélago
+        no perdona'
+  witch:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue convertido en puercoespín por una %killer%. Ni las brujas de
+        Salem eran tan efectivas'
+      Weapon:
+      - '%player% fue mutilado por una %killer%. Tu poción de vida era agua con colorante'
+      Magic:
+      - '%player% fue desintegrado por la magia de una %killer%. Hogwarts rechazó
+        tu solicitud... otra vez'
+      Melee:
+      - '%player% fue masacrado por una %killer%. Hasta las ancianas del bingo pegan
+        más fuerte'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por %killer%s. El aquelarre votó por eliminarte'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s. La convención de brujas aplaudió
+        tu muerte'
+      Magic:
+      - '%player% fue pulverizado por %killer%s. Ni el seguro cubre muertes por estupidez'
+      Melee:
+      - '%player% fue eliminado por %killer%s. Las brujas prefieren noobs para sus
+        pociones'
+  endermite:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue engañado y eliminado por un %killer% con %weapon%. La última
+        ilusión fue tu vida'
+      Weapon:
+      - '%player% fue trucidado por un %killer% con %weapon%. El show de magia salió
+        mal'
+      Melee:
+      - '%player% fue borrado por un %killer%. El truco final fue tu desaparición'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue víctima del espectáculo de %killer%s con %weapon%. El circo
+        de la muerte'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. La función de magia negra
+        fue un éxito'
+      Melee:
+      - '%player% fue aniquilado por un grupo de %killer%s. El público aplaude tu
+        muerte'
+  guardian:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        guardianes no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura guardian
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de guardians
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria guardian
+        no perdona'
+  shulker:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        shulkers no sabían usar arcos?'
+      Projectile-ShulkerBullet:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        shulkers no sabían usar balas?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. Los shulkers ya no
+        son tan amigables'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Projectile-ShulkerBullet:
+      - '%player% fue disparado por una nube de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  pig:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        pig no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura pig
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de pigs
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria pig
+        no perdona'
+  sheep:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        sheep no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura sheep
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de sheep
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria sheep
+        no perdona'
+  cow:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que las
+        cows no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura cow
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de cows
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria cow
+        no perdona'
+  chicken:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que las
+        chickens no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura chicken
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de chickens
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria chicken
+        no perdona'
+  squid:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        calamares no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura calamar
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de calamares
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria calamar
+        no perdona'
+  wolf:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        lobos no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura lobo
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de lobos
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria lobo
+        no perdona'
+  mushroomcow:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que las
+        cows de champiñón no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura cow
+        de champiñón está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de cows
+        de champiñón agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria cow
+        de champiñón no perdona'
+  snowman:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        snowmen no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura snowman
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de snowmen
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria snowman
+        no perdona'
+  ocelot:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        ocelots no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura ocelot
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de ocelots
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria ocelot
+        no perdona'
+  irongolem:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        golem de hierro no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura golem
+        de hierro está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de golem
+        de hierro agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria golem
+        de hierro no perdona'
+  horse:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        caballos no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura caballo
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de caballos
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria caballo
+        no perdona'
+  rabbit:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        conejos no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura conejo
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de conejos
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria conejo
+        no perdona'
+  polarbear:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        osos polares no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura oso
+        polar está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de osos
+        polares agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria oso
+        polar no perdona'
+  llama:
+    Solo:
+      Projectile-LlamaSpit:
+      - '%player% fue expulsado por un %killer%'
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        llamas no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura llama
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-LlamaSpit:
+      - '%player% fue expulsado por un %killer%'
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        llamas no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  parrot:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        loros no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura loro
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de loros
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria loro
+        no perdona'
+  villager:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        aldeanos no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura aldeano
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de aldeanos
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria aldeano
+        no perdona'
+  turtle:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que las
+        tortugas no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura tortuga
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de tortugas
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria tortuga
+        no perdona'
+  phantom:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue atravesado por un %killer%. Hasta los fantasmas tienen mejor
+        aim que tú'
+      Weapon:
+      - '%player% fue destrozado por un %killer%. El insomnio es el menor de tus problemas'
+      Melee:
+      - '%player% fue devorado por un %killer%. Duerme con un ojo abierto... si revives'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue perforado por %killer%s. La pesadilla se hizo realidad'
+      Weapon:
+      - '%player% fue masacrado por %killer%s. Ni en tus sueños sobrevives'
+      Melee:
+      - '%player% fue aniquilado por %killer%s. Freddy Krueger estaría orgulloso'
+  cod:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        cod no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura cod
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de cod
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria cod
+        no perdona'
+  salmon:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        salmones no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura salmon
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de salmones
+        agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria salmon
+        no perdona'
+  pufferfish:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        pez payaso no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura pez
+        payaso está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de peces
+        payaso agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria pez
+        payaso no perdona'
+  tropicalfish:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        peces tropicales no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura pez
+        tropical está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La revolución
+        campesina ha comenzado'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s con %weapon%. El sindicato de peces
+        tropicales agricultores ataca de nuevo'
+      Melee:
+      - '%player% fue linchado por una horda de %killer%s. La reforma agraria pez
+        tropical no perdona'
+  drowned:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        muertos no sabían usar arcos?'
+      Projectile-Trident:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        muertos no sabían usar tridentes?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. Los muertos ya no son
+        tan amigables'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Projectile-Trident:
+      - '%player% fue disparado por una nube de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  dolphin:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        delfines no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura delfín
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  cat:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        gatos no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura gato
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  panda:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        pandas no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura panda
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  pillager:
+    Solo:
+      Contact:
+      - '%player% fue empujado hacia un cactus por %killer%'
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        pillagers no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura pillager
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Contact:
+      - '%player% fue empujado hacia un cactus por %killer%'
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  ravager:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        ravis no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura ravi
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  traderllama:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        traders de llama no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura trader
+        de llama está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  wanderingtrader:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        traders vagabundos no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura trader
+        vagabundo está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  fox:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        zorros no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura zorro
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue destrozado por %killer%s con %weapon%. El más allá está sobrepoblado'
+      Melee:
+      - '%player% fue masacrado por un enjambre de %killer%s. La reunión de espíritus
+        terminó mal'
+  bee:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que las abejas
+        no sabían usar arcos?'
+      Weapon:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que las abejas
+        no sabían usar veneno?'
+      Melee:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que las abejas
+        no sabían usar veneno?'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que las abejas
+        no sabían usar veneno?'
+      Melee:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que las abejas
+        no sabían usar veneno?'
+  hoglin:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        hoglins no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura hoglin
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que los hoglins
+        no sabían usar veneno?'
+      Melee:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que los hoglins
+        no sabían usar veneno?'
+  piglin:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        piglins no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura piglin
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que los piglins
+        no sabían usar veneno?'
+      Melee:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que los piglins
+        no sabían usar veneno?'
+  strider:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        striders no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura strider
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que los striders
+        no sabían usar veneno?'
+      Melee:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que los striders
+        no sabían usar veneno?'
+  zoglin:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue disparado por un %killer% con %weapon%. ¿Quién dijo que los
+        zoglins no sabían usar arcos?'
+      Weapon:
+      - '%player% fue destripado por un %killer% con %weapon%. La agricultura zoglin
+        está evolucionando'
+      Melee:
+      - '%player% fue masacrado por un %killer%. Parece que el granjero quería cosechar
+        órganos'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%. La fiesta
+        fantasma se descontroló'
+      Weapon:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que los zoglins
+        no sabían usar veneno?'
+      Melee:
+      - '%player% fue picado por un %killer% con %weapon%. ¿Quién dijo que los zoglins
+        no sabían usar veneno?'
+  piglinbrute:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue cazado por un %killer%. La evolución te saltó por completo'
+      Weapon:
+      - '%player% fue destripado por un %killer%. Darwin lloraría al verte'
+      Melee:
+      - '%player% fue aplastado por un %killer%. Hasta los cerdos tienen más cerebro'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por %killer%s. La granja decidió sacrificarte'
+      Weapon:
+      - '%player% fue descuartizado por %killer%s. Ni el matadero te quiere'
+      Melee:
+      - '%player% fue triturado por %killer%s. El jamón tiene más dignidad'
+  # 1.17
+  goat:
+    Solo:
+      Melee:
+      - '%player% fue embestido por una %killer%. Ni las cabras del campo son tan
+        torpes'
+    Gang:
+      Melee:
+      - '%player% fue aplastado por %killer%s. La manada decidió que eras comida'
+  # 1.19
+  warden:
+    Solo:
+      Melee:
+      - '%player% fue pulverizado por un %killer%. La oscuridad es el menor de tus
+        problemas'
+      - '%player% fue borrado de la existencia por un %killer%. Ni las sombras quieren
+        tus restos'
+      Sonic-Boom:
+      - '%player% fue desintegrado por un grito sónico. El último sonido que escuchaste
+        fue tu fracaso'
+      - '%player% fue atomizado por ondas sonoras. Hasta los sordos oyeron tu muerte'
+    Gang:
+      Melee:
+      - '%player% fue aniquilado por una horda de %killer%s. La pesadilla se multiplica'
+      - '%player% fue masacrado por un ejército de %killer%s. El inframundo tiene
+        nueva decoración'
+      Sonic-Boom:
+      - '%player% fue reducido a polvo por una sinfonía de muerte. El concierto del
+        más allá'
+      - '%player% fue destruido por una orquesta de gritos. La música del infierno
+        suena mejor'
+  # 1.21
+  bogged:
+    Solo:
+      Projectile-Arrow:
+      - '%player% fue empujado por %killer%.'
+      Weapon:
+      - '%player% fue empujado por %killer% usando %weapon%'
+      Melee:
+      - '%player% fue empujado por un %killer%'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue empujado por una turba de %killer%s'
+      Weapon:
+      - '%player% fue empujado por una turba de %killer%s usando %weapon%'
+      Melee:
+      - '%player% fue empujado por una turba de %killer%''s'
+  breeze:
+    Solo:
+      Projectile-Fireball:
+      - '%player% fue lanzado al infinito por un %killer%. Hasta el viento te odia'
+      Melee:
+      - '%player% fue destrozado por un %killer%. La brisa te mandó a volar'
+    Gang:
+      Projectile-Fireball:
+      - '%player% fue pulverizado por %killer%s. El tornado humano'
+      Melee:
+      - '%player% fue eliminado por %killer%s. Ni el huracán es tan brutal'
+  # 1.21.4
+  creaking:
+    Solo:
+      Projectile-Fireball:
+      - '%player% fue desintegrado por un %killer%. Hasta las tablas crujen mejor'
+      Melee:
+      - '%player% fue triturado por un %killer%. La madera podrida tiene más vida'
+    Gang:
+      Projectile-Fireball:
+      - '%player% fue vaporizado por %killer%s. El piso decidió tu destino'
+      Melee:
+      - '%player% fue masacrado por %killer%s. Ni IKEA te quiere de mueble'
+  player:
+    Solo:
+      Bed:
+      - '%player% se quedó demasiado cerca de la cama de %killer% en el %world_environment%'
+      Respawn-Anchor:
+      - '%player% se quedó demasiado cerca de la ancla de respawn de %killer% en el
+        %world_environment%'
+      Contact:
+      - '%player% fue empujado hacia un cactus por %killer%'
+      Projectile-Unknown:
+      - '%player% fue disparado por %killer%'
+      Projectile-Arrow:
+      - '%player% fue disparado por %killer% usando %weapon%'
+      Projectile-Fireball:
+      - '%player% fue disparado por %killer%'
+      Projectile-Snowball:
+      - '%player% fue golpeado en la cabeza con una bola de nieve lanzada por %killer%'
+      Projectile-Trident:
+      - '%player% fue impalado por %killer%'
+      Weapon:
+      - '%player% fue asesinado por %killer% usando %weapon%'
+      Melee:
+      - '%player% fue brutalmente aplastado por el aparato reproductor de %killer%'
+      Suffocation:
+      - '%player% sufrió asfixia en una pared mientras peleaba con %killer_display%'
+      Fall:
+      - '%player% fue empujado de un lugar alto por %killer%'
+      Lava:
+      - '%player% fue empujado hacia la lava por %killer%'
+      Explosion:
+      - '%killer% explotó %player%'
+      TNT:
+      - '%killer% explotó %player% con tnt'
+      Firework:
+      - '%player% se quedó demasiado cerca de las fuegos artificiales de %killer%'
+      End-Crystal:
+      - '%killer% mató %player% explotando un end-crystal!'
+      Void:
+      - '%player% fue empujado hacia el vacío por %killer%'
+      Wither:
+      - '%player% se secó de %killer%''s magia'
+      Thorns:
+      - '%player% intentó jugar con la armadura de %killer% con espinas'
+      # Hook related deaths
+      CombatLogX-Kill:
+      - '%player% se desconectó durante la pelea peleando con %killer%, murió sin
+        querer -.-'
+    Gang:
+      Projectile-Arrow:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%'
+      Weapon:
+      - '%player% fue acribillado por una turba de %killer%s con %weapon%'
+      Melee:
+      - '%player% fue asesinado por una turba de %killer%''s'
+Custom-Mobs:
+  Mythic-Mobs:
+    SkeletalMinion:
+      Solo:
+        Projectile-Arrow:
+        - '%player% fue perforado por %killer%. Ni los esqueletos de plástico son
+          tan inútiles'
+        Weapon:
+        - '%player% fue desmembrado por %killer%. La muerte te rechazó por mediocre'
+        Melee:
+        - '%player% fue triturado por %killer%. Hasta los huesos tienen más dignidad'
+      Gang:
+        Projectile-Arrow:
+        - '%player% fue acribillado por %killer%s. La morgue tiene nuevo inquilino'
+        Weapon:
+        - '%player% fue descuartizado por %killer%s. Ni el osario te quiere'
+        Melee:
+        - '%player% fue masacrado por %killer%s. El cementerio tiene estándares'
