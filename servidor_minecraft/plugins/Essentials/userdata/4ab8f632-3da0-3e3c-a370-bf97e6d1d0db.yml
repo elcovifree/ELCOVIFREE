@@ -16,18 +16,18 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1746033857766
-  login: 1746033791594
+  logout: 1746034866801
+  login: 1746034747296
 money: '0'
 last-account-name: gootalive743
 logoutlocation:
   world: 15b2a69c-926f-4da5-bc59-d4264a1fbe79
   world-name: world
-  x: -95.46868185017107
-  y: 68.0
-  z: -760.0747648728512
-  yaw: 128.69964599609375
-  pitch: 15.74997329711914
+  x: 16.20106949758775
+  y: 65.0
+  z: -1277.4795417043863
+  yaw: 116.84949493408203
+  pitch: 15.29997730255127
 lastlocation:
   world: c3d1db32-4f30-4093-830c-0f5cb5841013
   world-name: elcovifree_nether
