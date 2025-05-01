@@ -1,0 +1,36 @@
+# =========================
+# LN PLUGIN 
+# Written by Lord Noda
+# =========================
+# Show support, Follow at
+#
+# Twitch.tv/LordNoda 
+# Twitter @LordNoda
+# Instagram @LordNoda
+# =========================
+
+Join:
+    Join Messages:
+        # Toggles Join Messages On/Off
+        join-messages-enabled: false
+        # Mutliple Lines with - (Wrapped in ' ')
+        # Playername : %player%
+        # MOTD : %motd%
+        # Note : Having no lines here will load default
+        join-messages:
+            - '§6§l%motd%'
+            - ' §9Welcome to the server %player%'
+    Join Commands:
+        # Toggles Join Commands On/Off
+        join-commands-enabled: false
+        # Command is executed via Console (Not player)
+        # Mutliple Lines with - (Wrapped in ' ')
+        # Playername : %player%
+        # MOTD : %motd%
+        # Note : Having no lines here will load default
+        join-commands: []
+
+Help:
+    # Mutliple Lines with - 
+    # Messages that will be displayed when /LNHelp is called
+    help-messages: []
