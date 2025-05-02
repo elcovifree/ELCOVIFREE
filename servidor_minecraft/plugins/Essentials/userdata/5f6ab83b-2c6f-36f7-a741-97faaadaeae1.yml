@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.27.119.63
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1746200977807
+  login: 1746200948580
+money: '0'
+last-account-name: rodri_mdzz
+logoutlocation:
+  world: 15b2a69c-926f-4da5-bc59-d4264a1fbe79
+  world-name: world
+  x: -25.225398580581267
+  y: 63.0
+  z: -785.3235875148522
+  yaw: 154.49990844726562
+  pitch: 27.600017547607422
