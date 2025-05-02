@@ -493,6 +493,7 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
+      "cooked_porkchop": "2025-05-02 18:24:07 +0000",
       "bread": "2025-04-30 17:41:01 +0000",
       "cooked_chicken": "2025-05-02 16:00:15 +0000",
       "melon_slice": "2025-05-02 17:50:16 +0000"
@@ -891,8 +892,10 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:blaze": "2025-05-02 18:17:46 +0000",
       "minecraft:skeleton": "2025-05-02 15:37:29 +0000",
       "minecraft:spider": "2025-05-02 10:36:18 +0000",
+      "minecraft:wither_skeleton": "2025-05-02 18:21:03 +0000",
       "minecraft:zombie": "2025-05-01 18:03:25 +0000",
       "minecraft:creeper": "2025-05-02 15:39:00 +0000",
       "minecraft:zombie_villager": "2025-05-02 17:10:27 +0000"
@@ -1698,9 +1701,39 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cracked_nether_bricks": {
+  "minecraft:recipes/decorations/mossy_cobblestone_wall": {
     "criteria": {
-      "has_nether_bricks": "2025-05-02 18:16:11 +0000"
+      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab": {
+    "criteria": {
+      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
+    "criteria": {
+      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
     },
     "done": true
   },
@@ -1710,9 +1743,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/mossy_cobblestone_wall": {
+  "minecraft:recipes/building_blocks/cracked_nether_bricks": {
     "criteria": {
-      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
+      "has_nether_bricks": "2025-05-02 18:16:11 +0000"
     },
     "done": true
   },
@@ -1731,18 +1764,6 @@
   "minecraft:recipes/building_blocks/nether_brick_slab": {
     "criteria": {
       "has_nether_bricks": "2025-05-02 18:16:11 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
-    "criteria": {
-      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
-    "criteria": {
-      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
     },
     "done": true
   },
@@ -1770,27 +1791,39 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
-    "criteria": {
-      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_slab": {
-    "criteria": {
-      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/nether_brick_fence": {
     "criteria": {
       "has_nether_bricks": "2025-05-02 18:16:11 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
+  "minecraft:nether/obtain_blaze_rod": {
     "criteria": {
-      "has_mossy_cobblestone": "2025-05-02 18:11:16 +0000"
+      "blaze_rod": "2025-05-02 18:17:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/shoot_arrow": {
+    "criteria": {
+      "shot_arrow": "2025-05-02 18:24:55 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/blaze_powder": {
+    "criteria": {
+      "has_blaze_rod": "2025-05-02 18:17:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2025-05-02 18:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/brewing_stand": {
+    "criteria": {
+      "has_blaze_rod": "2025-05-02 18:17:46 +0000"
     },
     "done": true
   },
