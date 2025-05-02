@@ -889,8 +889,10 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:skeleton": "2025-05-02 15:37:29 +0000",
       "minecraft:spider": "2025-05-02 10:36:18 +0000",
-      "minecraft:zombie": "2025-05-01 18:03:25 +0000"
+      "minecraft:zombie": "2025-05-01 18:03:25 +0000",
+      "minecraft:creeper": "2025-05-02 15:39:00 +0000"
     },
     "done": false
   },
@@ -1083,6 +1085,24 @@
   "minecraft:recipes/decorations/white_carpet": {
     "criteria": {
       "has_white_wool": "2025-05-02 11:12:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/fermented_spider_eye": {
+    "criteria": {
+      "has_spider_eye": "2025-05-02 15:38:00 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2025-05-02 15:39:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2025-05-02 15:39:01 +0000"
     },
     "done": true
   },
