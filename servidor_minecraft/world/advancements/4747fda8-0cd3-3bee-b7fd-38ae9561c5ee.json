@@ -100,7 +100,8 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
-      "melon_slice": "2025-05-02 15:56:19 +0000"
+      "melon_slice": "2025-05-02 15:56:19 +0000",
+      "carrot": "2025-05-02 16:30:15 +0000"
     },
     "done": false
   },
@@ -521,6 +522,42 @@
   "minecraft:recipes/misc/paper": {
     "criteria": {
       "has_reeds": "2025-05-02 16:16:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/blue_dye": {
+    "criteria": {
+      "has_lapis_lazuli": "2025-05-02 16:30:32 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lapis_block": {
+    "criteria": {
+      "has_lapis_lazuli": "2025-05-02 16:30:32 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/carrot_on_a_stick": {
+    "criteria": {
+      "has_carrot": "2025-05-02 16:29:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pumpkin_seeds": {
+    "criteria": {
+      "has_pumpkin": "2025-05-02 16:29:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2025-05-02 16:32:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/pumpkin_pie": {
+    "criteria": {
+      "has_pumpkin": "2025-05-02 16:29:35 +0000"
     },
     "done": true
   },
