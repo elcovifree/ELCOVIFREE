@@ -16,7 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 0
+  logout: 1746372937876
   login: 1746371047432
 money: '0'
 last-account-name: ElSospechoso
+logoutlocation:
+  world: 15b2a69c-926f-4da5-bc59-d4264a1fbe79
+  world-name: world
+  x: 97.69999998807907
+  y: 1.0
+  z: -876.3000489093033
+  yaw: 129.478515625
+  pitch: 40.799991607666016
