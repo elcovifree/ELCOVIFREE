@@ -111,6 +111,7 @@
       "cooked_porkchop": "2025-05-02 17:06:22 +0000",
       "cooked_chicken": "2025-05-02 16:52:58 +0000",
       "cooked_mutton": "2025-05-02 16:51:21 +0000",
+      "cooked_beef": "2025-05-05 14:31:22 +0000",
       "melon_slice": "2025-05-02 15:56:19 +0000",
       "carrot": "2025-05-02 16:30:15 +0000"
     },
@@ -1163,6 +1164,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:blaze": "2025-05-02 18:17:50 +0000",
+      "minecraft:skeleton": "2025-05-05 14:33:19 +0000",
       "minecraft:spider": "2025-05-02 17:27:10 +0000",
       "minecraft:wither_skeleton": "2025-05-02 18:15:47 +0000",
       "minecraft:zombie": "2025-05-02 17:13:28 +0000",
@@ -1434,6 +1436,30 @@
     },
     "done": true
   },
+  "minecraft:nether/obtain_blaze_rod": {
+    "criteria": {
+      "blaze_rod": "2025-05-02 18:17:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/blaze_powder": {
+    "criteria": {
+      "has_blaze_rod": "2025-05-02 18:17:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/brewing_stand": {
+    "criteria": {
+      "has_blaze_rod": "2025-05-02 18:17:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dispenser": {
+    "criteria": {
+      "has_bow": "2025-05-02 18:18:49 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/chiseled_tuff_bricks_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2025-05-02 18:19:11 +0000"
@@ -1488,18 +1514,6 @@
     },
     "done": true
   },
-  "minecraft:nether/obtain_blaze_rod": {
-    "criteria": {
-      "blaze_rod": "2025-05-02 18:17:51 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/dispenser": {
-    "criteria": {
-      "has_bow": "2025-05-02 18:18:49 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/tuff_brick_wall_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2025-05-02 18:19:11 +0000"
@@ -1509,12 +1523,6 @@
   "minecraft:recipes/building_blocks/chiseled_tuff_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2025-05-02 18:19:11 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/brewing/blaze_powder": {
-    "criteria": {
-      "has_blaze_rod": "2025-05-02 18:17:51 +0000"
     },
     "done": true
   },
@@ -1554,9 +1562,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/brewing/brewing_stand": {
+  "minecraft:recipes/misc/bone_meal": {
     "criteria": {
-      "has_blaze_rod": "2025-05-02 18:17:51 +0000"
+      "has_bone": "2025-05-05 14:33:21 +0000"
     },
     "done": true
   },
