@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1746210184289
+  logout: 1746456378263
   login: 1746455263487
 money: '0'
 last-account-name: roodriixz
 logoutlocation:
   world: 15b2a69c-926f-4da5-bc59-d4264a1fbe79
   world-name: world
-  x: 120.93931973618271
-  y: 72.0
-  z: 28.754885130460035
-  yaw: -98.39984130859375
-  pitch: 33.299957275390625
+  x: 204.0591396143334
+  y: 70.0
+  z: 83.2228821193084
+  yaw: -92.69970703125
+  pitch: 15.4500093460083
