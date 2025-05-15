@@ -150,3 +150,10 @@
 [16:56:51] [User Authenticator #0/INFO]: UUID of player gootalive743 is 4ab8f632-3da0-3e3c-a370-bf97e6d1d0db
 [16:56:52] [Server thread/INFO]: gootalive743 joined the game
 [16:56:53] [Server thread/INFO]: gootalive743[/127.61.154.71:58251] logged in with entity id 65 at ([world]138.0142612828901, 72.0, 22.993128666381754)
+[17:08:14] [Server thread/INFO]: gootalive743 lost connection: Disconnected
+[17:08:14] [Server thread/INFO]: gootalive743 left the game
+[17:11:10] [User Authenticator #1/INFO]: UUID of player gootalive743 is 4ab8f632-3da0-3e3c-a370-bf97e6d1d0db
+[17:11:10] [Server thread/INFO]: gootalive743 joined the game
+[17:11:11] [Server thread/INFO]: gootalive743[/127.61.154.71:45493] logged in with entity id 3227 at ([world_nether]-1.1175207866355175, 52.0, 71.14848480002554)
+[17:14:13] [Server thread/INFO]: [DM] gootalive743 fue aniquilado por un Wither Skeleton. Eso es todo, se acabó (Extra: World:world_nether, X:28, Y:60, Z:30)
+[17:14:29] [Server thread/INFO]: gootalive743 issued server command: /back

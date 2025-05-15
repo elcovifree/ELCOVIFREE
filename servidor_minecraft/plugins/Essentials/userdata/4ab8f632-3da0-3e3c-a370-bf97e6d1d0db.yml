@@ -16,18 +16,18 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1747161802643
-  login: 1747328213331
+  logout: 1747328894313
+  login: 1747329071004
 money: '0'
 last-account-name: gootalive743
 logoutlocation:
-  world: 15b2a69c-926f-4da5-bc59-d4264a1fbe79
-  world-name: world
-  x: 138.0142612828901
-  y: 72.0
-  z: 22.993128666381754
-  yaw: -151.19998168945312
-  pitch: 33.150047302246094
+  world: 71e76045-2a4f-4447-89cb-abb5c1af5a9a
+  world-name: world_nether
+  x: -1.1175207866355175
+  y: 52.0
+  z: 71.14848480002554
+  yaw: -88.20245361328125
+  pitch: 13.499977111816406
 lastlocation:
   world: 15b2a69c-926f-4da5-bc59-d4264a1fbe79
   world-name: world
