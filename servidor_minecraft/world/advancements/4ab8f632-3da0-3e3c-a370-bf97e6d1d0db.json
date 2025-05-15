@@ -901,6 +901,7 @@
     "criteria": {
       "minecraft:blaze": "2025-05-02 18:17:46 +0000",
       "minecraft:skeleton": "2025-05-02 15:37:29 +0000",
+      "minecraft:zombified_piglin": "2025-05-15 18:12:38 +0000",
       "minecraft:silverfish": "2025-05-04 18:14:15 +0000",
       "minecraft:enderman": "2025-05-15 17:13:00 +0000",
       "minecraft:magma_cube": "2025-05-15 17:02:46 +0000",
@@ -2344,6 +2345,30 @@
   "minecraft:recipes/building_blocks/magma_block": {
     "criteria": {
       "has_magma_cream": "2025-05-15 17:18:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/fishy_business": {
+    "criteria": {
+      "cod": "2025-05-15 18:15:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_smoking": {
+    "criteria": {
+      "has_cod": "2025-05-15 18:15:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_campfire_cooking": {
+    "criteria": {
+      "has_cod": "2025-05-15 18:15:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod": {
+    "criteria": {
+      "has_cod": "2025-05-15 18:15:07 +0000"
     },
     "done": true
   },
