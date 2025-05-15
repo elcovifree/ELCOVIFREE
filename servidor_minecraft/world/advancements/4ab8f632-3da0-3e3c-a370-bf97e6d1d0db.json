@@ -501,6 +501,7 @@
       "cooked_chicken": "2025-05-02 16:00:15 +0000",
       "cooked_mutton": "2025-05-04 17:51:47 +0000",
       "beef": "2025-05-04 18:24:19 +0000",
+      "baked_potato": "2025-05-15 17:22:32 +0000",
       "melon_slice": "2025-05-02 17:50:16 +0000"
     },
     "done": false
@@ -900,6 +901,7 @@
       "minecraft:blaze": "2025-05-02 18:17:46 +0000",
       "minecraft:skeleton": "2025-05-02 15:37:29 +0000",
       "minecraft:silverfish": "2025-05-04 18:14:15 +0000",
+      "minecraft:enderman": "2025-05-15 17:13:00 +0000",
       "minecraft:magma_cube": "2025-05-15 17:02:46 +0000",
       "minecraft:spider": "2025-05-02 10:36:18 +0000",
       "minecraft:wither_skeleton": "2025-05-02 18:21:03 +0000",
@@ -2335,6 +2337,12 @@
   "minecraft:recipes/combat/golden_leggings": {
     "criteria": {
       "has_gold_ingot": "2025-05-15 17:04:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/magma_block": {
+    "criteria": {
+      "has_magma_cream": "2025-05-15 17:18:51 +0000"
     },
     "done": true
   },
