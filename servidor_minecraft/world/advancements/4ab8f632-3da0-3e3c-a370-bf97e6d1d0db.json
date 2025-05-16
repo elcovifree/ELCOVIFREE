@@ -7,13 +7,18 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:deep_cold_ocean": "2025-04-18 10:24:58 +0000",
       "minecraft:cold_ocean": "2025-04-18 10:24:55 +0000",
-      "minecraft:frozen_ocean": "2025-05-02 10:48:19 +0000",
       "minecraft:beach": "2025-04-30 17:39:19 +0000",
+      "minecraft:forest": "2025-05-16 15:34:16 +0000",
+      "minecraft:deep_ocean": "2025-05-16 15:32:36 +0000",
+      "minecraft:river": "2025-05-01 18:01:03 +0000",
+      "minecraft:deep_cold_ocean": "2025-04-18 10:24:58 +0000",
+      "minecraft:frozen_ocean": "2025-05-02 10:48:19 +0000",
       "minecraft:deep_frozen_ocean": "2025-05-08 17:51:03 +0000",
       "minecraft:ocean": "2025-04-18 10:25:52 +0000",
-      "minecraft:river": "2025-05-01 18:01:03 +0000",
+      "minecraft:swamp": "2025-05-16 15:33:54 +0000",
+      "minecraft:windswept_hills": "2025-05-16 15:35:55 +0000",
+      "minecraft:windswept_savanna": "2025-05-16 15:33:46 +0000",
       "minecraft:plains": "2025-04-18 10:24:21 +0000"
     },
     "done": false
@@ -2348,6 +2353,36 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_nuggets": {
+    "criteria": {
+      "has_iron_nugget": "2025-05-15 17:30:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/fishy_business": {
+    "criteria": {
+      "cod": "2025-05-15 18:15:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_smoking": {
+    "criteria": {
+      "has_cod": "2025-05-15 18:15:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_campfire_cooking": {
+    "criteria": {
+      "has_cod": "2025-05-15 18:15:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod": {
+    "criteria": {
+      "has_cod": "2025-05-15 18:15:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/brown_banner": {
     "criteria": {
       "has_brown_wool": "2025-05-15 18:31:58 +0000"
@@ -2366,18 +2401,6 @@
     },
     "done": true
   },
-  "minecraft:husbandry/fishy_business": {
-    "criteria": {
-      "cod": "2025-05-15 18:15:07 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_cod_from_smoking": {
-    "criteria": {
-      "has_cod": "2025-05-15 18:15:07 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/red_dye_from_beetroot": {
     "criteria": {
       "has_beetroot": "2025-05-15 18:35:10 +0000"
@@ -2387,24 +2410,6 @@
   "minecraft:recipes/food/beetroot_soup": {
     "criteria": {
       "has_beetroot": "2025-05-15 18:35:10 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_cod_from_campfire_cooking": {
-    "criteria": {
-      "has_cod": "2025-05-15 18:15:07 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_cod": {
-    "criteria": {
-      "has_cod": "2025-05-15 18:15:07 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_ingot_from_nuggets": {
-    "criteria": {
-      "has_iron_nugget": "2025-05-15 17:30:51 +0000"
     },
     "done": true
   },
