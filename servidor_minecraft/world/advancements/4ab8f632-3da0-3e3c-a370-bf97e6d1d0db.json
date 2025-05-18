@@ -15,6 +15,7 @@
       "minecraft:river": "2025-05-01 18:01:03 +0000",
       "minecraft:deep_cold_ocean": "2025-04-18 10:24:58 +0000",
       "minecraft:frozen_ocean": "2025-05-02 10:48:19 +0000",
+      "minecraft:desert": "2025-05-18 06:49:23 +0000",
       "minecraft:deep_frozen_ocean": "2025-05-08 17:51:03 +0000",
       "minecraft:ocean": "2025-04-18 10:25:52 +0000",
       "minecraft:swamp": "2025-05-16 15:33:54 +0000",
@@ -2412,6 +2413,12 @@
   "minecraft:recipes/food/beetroot_soup": {
     "criteria": {
       "has_beetroot": "2025-05-15 18:35:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2025-05-18 06:47:21 +0000"
     },
     "done": true
   },
