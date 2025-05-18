@@ -167,3 +167,56 @@
 [07:12:54] [User Authenticator #3/INFO]: UUID of player gootalive743 is 4ab8f632-3da0-3e3c-a370-bf97e6d1d0db
 [07:12:54] [Server thread/INFO]: gootalive743 joined the game
 [07:12:54] [Server thread/INFO]: gootalive743[/127.61.154.71:33849] logged in with entity id 10305 at ([world]-3554.1259933311994, 71.0, 806.1994507695426)
+[07:24:22] [Server thread/INFO]: gootalive743 lost connection: Disconnected
+[07:24:22] [Server thread/INFO]: gootalive743 left the game
+[07:26:45] [User Authenticator #4/INFO]: UUID of player gootalive743 is 4ab8f632-3da0-3e3c-a370-bf97e6d1d0db
+[07:26:46] [Server thread/INFO]: gootalive743 joined the game
+[07:26:46] [Server thread/INFO]: gootalive743[/127.61.154.71:46071] logged in with entity id 13688 at ([world]-3710.7912802033647, 63.0, 1462.2194364161855)
+[07:27:12] [Server thread/INFO]: gootalive743 lost connection: Disconnected
+[07:27:12] [Server thread/INFO]: gootalive743 left the game
+[07:27:31] [Server thread/INFO]: Stopping the server
+[07:27:31] [Server thread/INFO]: Stopping server
+[07:27:31] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v7.6
+[07:27:31] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[07:27:31] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 7.6
+[07:27:31] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.1-dev+12-8455212
+[07:27:31] [Server thread/INFO]: [DeathMessages] Disabling DeathMessages v1.4.20
+[07:27:31] [Server thread/INFO]: [CustomKill] Disabling CustomKillMessages v1.0.0
+[07:27:31] [Server thread/INFO]: [Thunder] Disabling Thunder v0.0.1
+[07:27:31] [Server thread/INFO]: [Thunder] The core is now disabled.
+[07:27:31] [Server thread/INFO]: [ActionHealth] Disabling ActionHealth v3.6.0
+[07:27:31] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.36
+[07:27:31] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.6.3
+[07:27:31] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.7.1-SNAPSHOT
+[07:27:31] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[07:27:31] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[07:27:31] [Server thread/INFO]: [SetHome] Disabling SetHome v6.2.3
+[07:27:31] [Server thread/INFO]: [GSit] Disabling GSit v2.3.2
+[07:27:31] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
+[07:27:31] [WebSocketConnectReadThread-111/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[07:27:31] [Server thread/INFO]: [LNPlugin] Disabling LNPlugin v1.1
+[07:27:31] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.3.2
+[07:27:31] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
+[07:27:31] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.3.2
+[07:27:31] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[07:27:31] [Server thread/INFO]: Saving players
+[07:27:31] [Server thread/INFO]: Saving worlds
+[07:27:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 5 entity chunks, 0 poi chunks in world 'world' in 0.07s
+[07:27:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 31 entity chunks, 0 poi chunks in world 'world_nether' in 0.02s
+[07:27:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[07:27:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[07:27:32] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[07:27:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[07:27:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[07:27:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[07:27:32] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
