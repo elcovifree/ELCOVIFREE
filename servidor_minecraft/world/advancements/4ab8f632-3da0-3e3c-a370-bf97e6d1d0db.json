@@ -13,12 +13,14 @@
       "minecraft:mangrove_swamp": "2025-05-16 15:38:34 +0000",
       "minecraft:deep_ocean": "2025-05-16 15:32:36 +0000",
       "minecraft:river": "2025-05-01 18:01:03 +0000",
+      "minecraft:lukewarm_ocean": "2025-05-18 07:16:53 +0000",
       "minecraft:stony_shore": "2025-05-18 06:59:33 +0000",
       "minecraft:deep_cold_ocean": "2025-04-18 10:24:58 +0000",
       "minecraft:frozen_ocean": "2025-05-02 10:48:19 +0000",
       "minecraft:desert": "2025-05-18 06:49:23 +0000",
       "minecraft:deep_frozen_ocean": "2025-05-08 17:51:03 +0000",
       "minecraft:ocean": "2025-04-18 10:25:52 +0000",
+      "minecraft:jungle": "2025-05-18 07:14:11 +0000",
       "minecraft:swamp": "2025-05-16 15:33:54 +0000",
       "minecraft:windswept_hills": "2025-05-16 15:35:55 +0000",
       "minecraft:savanna": "2025-05-16 15:38:30 +0000",
@@ -2481,9 +2483,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/sandstone_stairs": {
+  "minecraft:recipes/building_blocks/red_sandstone": {
     "criteria": {
-      "has_cut_sandstone": "2025-05-18 07:08:33 +0000"
+      "has_sand": "2025-05-18 07:05:55 +0000"
     },
     "done": true
   },
@@ -2517,33 +2519,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/red_sandstone": {
-    "criteria": {
-      "has_sand": "2025-05-18 07:05:55 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2025-05-18 07:06:35 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cut_sandstone_slab": {
-    "criteria": {
-      "has_cut_sandstone": "2025-05-18 07:08:33 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
       "has_diamond": "2025-05-18 07:06:35 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cut_sandstone_slab_from_cut_sandstone_stonecutting": {
-    "criteria": {
-      "has_cut_sandstone": "2025-05-18 07:08:33 +0000"
     },
     "done": true
   },
@@ -2571,15 +2555,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/mojang_banner_pattern": {
     "criteria": {
       "has_enchanted_golden_apple": "2025-05-18 07:07:05 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/combat/diamond_boots": {
+  "minecraft:recipes/building_blocks/sandstone_stairs": {
     "criteria": {
-      "has_diamond": "2025-05-18 07:06:35 +0000"
+      "has_cut_sandstone": "2025-05-18 07:08:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab": {
+    "criteria": {
+      "has_cut_sandstone": "2025-05-18 07:08:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab_from_cut_sandstone_stonecutting": {
+    "criteria": {
+      "has_cut_sandstone": "2025-05-18 07:08:33 +0000"
     },
     "done": true
   },
