@@ -22,6 +22,7 @@
       "minecraft:swamp": "2025-05-16 15:33:54 +0000",
       "minecraft:windswept_hills": "2025-05-16 15:35:55 +0000",
       "minecraft:savanna": "2025-05-16 15:38:30 +0000",
+      "minecraft:wooded_badlands": "2025-05-18 07:05:19 +0000",
       "minecraft:windswept_savanna": "2025-05-16 15:33:46 +0000",
       "minecraft:plains": "2025-04-18 10:24:21 +0000",
       "minecraft:warm_ocean": "2025-05-18 06:55:30 +0000"
@@ -912,11 +913,12 @@
       "minecraft:blaze": "2025-05-02 18:17:46 +0000",
       "minecraft:skeleton": "2025-05-02 15:37:29 +0000",
       "minecraft:zombified_piglin": "2025-05-15 18:12:38 +0000",
+      "minecraft:wither_skeleton": "2025-05-02 18:21:03 +0000",
+      "minecraft:husk": "2025-05-18 07:04:52 +0000",
       "minecraft:silverfish": "2025-05-04 18:14:15 +0000",
       "minecraft:enderman": "2025-05-15 17:13:00 +0000",
       "minecraft:magma_cube": "2025-05-15 17:02:46 +0000",
       "minecraft:spider": "2025-05-02 10:36:18 +0000",
-      "minecraft:wither_skeleton": "2025-05-02 18:21:03 +0000",
       "minecraft:zombie": "2025-05-01 18:03:25 +0000",
       "minecraft:creeper": "2025-05-02 15:39:00 +0000",
       "minecraft:drowned": "2025-05-18 06:59:58 +0000",
@@ -2425,21 +2427,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/copper_block": {
-    "criteria": {
-      "has_copper_ingot": "2025-05-18 06:59:58 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/dune_armor_trim_smithing_template": {
     "criteria": {
       "has_dune_armor_trim_smithing_template": "2025-05-18 06:52:28 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/tools/brush": {
+  "minecraft:recipes/misc/dune_armor_trim_smithing_template_smithing_trim": {
     "criteria": {
-      "has_copper_ingot": "2025-05-18 06:59:58 +0000"
+      "has_smithing_trim_template": "2025-05-18 06:52:28 +0000"
     },
     "done": true
   },
@@ -2449,9 +2445,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/dune_armor_trim_smithing_template_smithing_trim": {
+  "minecraft:recipes/building_blocks/copper_block": {
     "criteria": {
-      "has_smithing_trim_template": "2025-05-18 06:52:28 +0000"
+      "has_copper_ingot": "2025-05-18 06:59:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/brush": {
+    "criteria": {
+      "has_copper_ingot": "2025-05-18 06:59:58 +0000"
     },
     "done": true
   },
@@ -2476,6 +2478,108 @@
   "minecraft:recipes/misc/conduit": {
     "criteria": {
       "has_nautilus_shell": "2025-05-18 06:59:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_stairs": {
+    "criteria": {
+      "has_cut_sandstone": "2025-05-18 07:08:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_sandstone": {
+    "criteria": {
+      "has_sand": "2025-05-18 07:05:55 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab": {
+    "criteria": {
+      "has_cut_sandstone": "2025-05-18 07:08:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab_from_cut_sandstone_stonecutting": {
+    "criteria": {
+      "has_cut_sandstone": "2025-05-18 07:08:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2025-05-18 07:07:05 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2025-05-18 07:06:35 +0000"
     },
     "done": true
   },
