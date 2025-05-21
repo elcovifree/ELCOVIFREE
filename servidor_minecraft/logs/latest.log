@@ -169,3 +169,49 @@
 [16:03:28] [Server thread/INFO]: gootalive743 issued server command: /back
 [16:06:42] [Server thread/INFO]: gootalive743 lost connection: Disconnected
 [16:06:42] [Server thread/INFO]: gootalive743 left the game
+[16:07:13] [Server thread/INFO]: Stopping the server
+[16:07:13] [Server thread/INFO]: Stopping server
+[16:07:13] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v7.6
+[16:07:13] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[16:07:13] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 7.6
+[16:07:13] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.1-dev+12-8455212
+[16:07:13] [Server thread/INFO]: [DeathMessages] Disabling DeathMessages v1.4.20
+[16:07:13] [Server thread/INFO]: [CustomKill] Disabling CustomKillMessages v1.0.0
+[16:07:13] [Server thread/INFO]: [Thunder] Disabling Thunder v0.0.1
+[16:07:13] [Server thread/INFO]: [Thunder] The core is now disabled.
+[16:07:13] [Server thread/INFO]: [ActionHealth] Disabling ActionHealth v3.6.0
+[16:07:13] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.36
+[16:07:13] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.6.3
+[16:07:13] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.7.1-SNAPSHOT
+[16:07:13] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[16:07:13] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[16:07:13] [Server thread/INFO]: [SetHome] Disabling SetHome v6.2.3
+[16:07:13] [Server thread/INFO]: [GSit] Disabling GSit v2.3.2
+[16:07:13] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
+[16:07:13] [Server thread/INFO]: [LNPlugin] Disabling LNPlugin v1.1
+[16:07:13] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.3.2
+[16:07:13] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
+[16:07:13] [WebSocketConnectReadThread-112/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[16:07:13] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.3.2
+[16:07:13] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[16:07:13] [Server thread/INFO]: Saving players
+[16:07:13] [Server thread/INFO]: Saving worlds
+[16:07:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:07:13] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[16:07:13] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[16:07:13] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[16:07:14] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 5 entity chunks, 0 poi chunks in world 'world' in 0.26s
+[16:07:14] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[16:07:14] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[16:07:14] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[16:07:14] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[16:07:14] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 32 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[16:07:14] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[16:07:14] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[16:07:14] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[16:07:14] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[16:07:14] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[16:07:14] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:07:14] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:07:14] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:07:14] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
