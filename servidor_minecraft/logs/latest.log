@@ -159,3 +159,9 @@
 [15:42:03] [Server thread/INFO]: gootalive743[/127.61.154.71:55259] logged in with entity id 1505 at ([world]-1501.9082794787382, 14.0, -1867.8853086101067)
 [15:43:28] [Server thread/INFO]: [DM] gootalive743 fue devorado por un Zombie. Al menos moriste alimentando a alguien (Extra: World:world, X:-1585, Y:-29, Z:-1930)
 [15:43:33] [Server thread/INFO]: gootalive743 issued server command: /back
+[15:46:51] [Server thread/INFO]: gootalive743 lost connection: Disconnected
+[15:46:51] [Server thread/INFO]: gootalive743 left the game
+[15:47:04] [User Authenticator #2/INFO]: UUID of player gootalive743 is 4ab8f632-3da0-3e3c-a370-bf97e6d1d0db
+[15:47:05] [Server thread/INFO]: gootalive743 joined the game
+[15:47:05] [Server thread/INFO]: gootalive743[/127.61.154.71:55343] logged in with entity id 3098 at ([world]-1586.5426216849603, 11.0, -1933.6231483119857)
+[15:51:41] [Server thread/INFO]: gootalive743 has made the advancement [Eye Spy]
