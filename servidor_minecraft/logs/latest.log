@@ -152,3 +152,8 @@
 [14:39:26] [Server thread/INFO]: roodriixz[/127.54.241.40:59391] logged in with entity id 86 at ([world]204.0591396143334, 70.0, 83.2228821193084)
 [14:40:21] [Server thread/INFO]: roodriixz issued server command: /home
 [14:40:23] [Server thread/INFO]: roodriixz is sleeping - Moving to day time
+[14:51:51] [User Authenticator #1/INFO]: UUID of player gootalive743 is 4ab8f632-3da0-3e3c-a370-bf97e6d1d0db
+[14:51:52] [Server thread/INFO]: gootalive743 joined the game
+[14:51:52] [Server thread/INFO]: gootalive743[/127.61.154.71:56713] logged in with entity id 9151 at ([world]106.63810532844042, 45.0, 151.01441727560214)
+[14:52:00] [Server thread/INFO]: gootalive743 issued server command: /home
+[14:52:02] [Server thread/INFO]: gootalive743 is sleeping - Moving to day time
