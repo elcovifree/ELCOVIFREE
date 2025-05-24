@@ -165,3 +165,55 @@
 [09:12:34] [Server thread/WARN]: gootalive743 moved too quickly! -1.105014031904247,0.0,10.108908433178186
 [09:15:26] [Server thread/INFO]: gootalive743 issued server command: /home
 [09:15:27] [Server thread/INFO]: gootalive743 is sleeping - Moving to day time
+[09:19:45] [Server thread/INFO]: gootalive743 issued server command: /home
+[09:22:41] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /kill @e[type=item]
+[09:22:41] [Server thread/ERROR]: [Essentials] Command kill failed:
+com.earth2me.essentials.libs.kyori.adventure.text.minimessage.internal.parser.ParsingExceptionImpl: Legacy formatting codes have been detected in a MiniMessage string - this is unsupported behaviour. Please refer to the Adventure documentation (https://docs.advntr.dev) for more information.
+	<secondary>Error:<dark_red> "§cJugador §e{0} §cno encontrado. §7¿Voló al Nether? 🧭"
+	                             ^^
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.internal.parser.TokenParser.parseString(TokenParser.java:170) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.internal.parser.TokenParser.resolvePreProcessTags(TokenParser.java:112) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.MiniMessageParser.parseToTree(MiniMessageParser.java:195) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.MiniMessageParser.parseFormat(MiniMessageParser.java:209) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.MiniMessageImpl.deserialize(MiniMessageImpl.java:82) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.MiniMessageImpl.deserialize(MiniMessageImpl.java:46) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.CommandSource.sendTl(CommandSource.java:40) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.Essentials.showError(Essentials.java:892) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.Essentials.onCommandEssentials(Essentials.java:854) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.Essentials.onCommand(Essentials.java:725) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-mojangapi-1.21.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:165) ~[paper-mojangapi-1.21.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.dispatchCommand(CraftServer.java:1000) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at org.bukkit.craftbukkit.CraftServer.dispatchServerCommand(CraftServer.java:985) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:526) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:474) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1598) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1304) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:23:10] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /kill @e[type=item]
+[09:23:10] [Server thread/ERROR]: [Essentials] Command kill failed:
+com.earth2me.essentials.libs.kyori.adventure.text.minimessage.internal.parser.ParsingExceptionImpl: Legacy formatting codes have been detected in a MiniMessage string - this is unsupported behaviour. Please refer to the Adventure documentation (https://docs.advntr.dev) for more information.
+	<secondary>Error:<dark_red> "§cJugador §e{0} §cno encontrado. §7¿Voló al Nether? 🧭"
+	                             ^^
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.internal.parser.TokenParser.parseString(TokenParser.java:170) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.internal.parser.TokenParser.resolvePreProcessTags(TokenParser.java:112) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.MiniMessageParser.parseToTree(MiniMessageParser.java:195) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.MiniMessageParser.parseFormat(MiniMessageParser.java:209) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.MiniMessageImpl.deserialize(MiniMessageImpl.java:82) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.libs.kyori.adventure.text.minimessage.MiniMessageImpl.deserialize(MiniMessageImpl.java:46) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.CommandSource.sendTl(CommandSource.java:40) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.Essentials.showError(Essentials.java:892) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.Essentials.onCommandEssentials(Essentials.java:854) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at EssentialsX-2.21.1-dev+12-8455212.jar/com.earth2me.essentials.Essentials.onCommand(Essentials.java:725) ~[EssentialsX-2.21.1-dev+12-8455212.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-mojangapi-1.21.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:165) ~[paper-mojangapi-1.21.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.dispatchCommand(CraftServer.java:1000) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at org.bukkit.craftbukkit.CraftServer.dispatchServerCommand(CraftServer.java:985) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:526) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:474) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1598) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1304) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.1.jar:1.21.1-57-b483da4]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:23:31] [Server thread/WARN]: gootalive743 moved too quickly! 5.322762564217413,-4.05546243452504,7.584872233653208
