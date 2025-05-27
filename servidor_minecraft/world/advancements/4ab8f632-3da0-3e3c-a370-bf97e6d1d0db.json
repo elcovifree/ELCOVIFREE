@@ -913,6 +913,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:blaze": "2025-05-02 18:17:46 +0000",
+      "minecraft:pillager": "2025-05-27 05:29:11 +0000",
       "minecraft:skeleton": "2025-05-02 15:37:29 +0000",
       "minecraft:zombified_piglin": "2025-05-15 18:12:38 +0000",
       "minecraft:wither_skeleton": "2025-05-02 18:21:03 +0000",
@@ -2948,6 +2949,12 @@
   "minecraft:recipes/decorations/oak_hanging_sign": {
     "criteria": {
       "has_stripped_logs": "2025-05-25 14:29:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2025-05-27 05:29:11 +0000"
     },
     "done": true
   },

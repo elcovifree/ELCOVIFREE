@@ -158,3 +158,61 @@
 [05:09:55] [Server thread/INFO]: gootalive743 is sleeping - Moving to day time
 [05:14:50] [Server thread/INFO]: gootalive743 issued server command: /home
 [05:15:52] [Server thread/INFO]: gootalive743 issued server command: /home
+[05:27:27] [Server thread/INFO]: gootalive743 issued server command: /home
+[05:28:20] [Server thread/INFO]: gootalive743 is sleeping - Moving to day time
+[05:29:11] [Server thread/INFO]: gootalive743 has made the advancement [Voluntary Exile]
+[05:29:13] [Server thread/INFO]: [DM] gootalive743 fue disparado por un Pillager con Crossbow. ¿Quién dijo que los pillagers no sabían usar arcos? (Extra: World:world, X:183, Y:71, Z:37)
+[05:29:20] [Server thread/INFO]: gootalive743 issued server command: /back
+[05:29:40] [Server thread/INFO]: [DM] gootalive743 fue disparado por un Pillager con Crossbow. ¿Quién dijo que los pillagers no sabían usar arcos? (Extra: World:world, X:178, Y:71, Z:34)
+[05:29:47] [Server thread/INFO]: gootalive743 issued server command: /back
+[05:30:51] [Server thread/INFO]: [DM] gootalive743 fue perforado por un Skeleton. Ahora tienes más agujeros que tu cerebro (Extra: World:world, X:193, Y:70, Z:69)
+[05:30:54] [Server thread/INFO]: gootalive743 issued server command: /home
+[05:30:58] [Server thread/INFO]: gootalive743 issued server command: /back
+[05:33:46] [Server thread/INFO]: gootalive743 lost connection: Disconnected
+[05:33:46] [Server thread/INFO]: gootalive743 left the game
+[05:33:53] [Server thread/INFO]: Stopping the server
+[05:33:54] [Server thread/INFO]: Stopping server
+[05:33:54] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v7.6
+[05:33:54] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[05:33:54] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 7.6
+[05:33:54] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.1-dev+12-8455212
+[05:33:54] [Server thread/INFO]: [DeathMessages] Disabling DeathMessages v1.4.20
+[05:33:54] [Server thread/INFO]: [CustomKill] Disabling CustomKillMessages v1.0.0
+[05:33:54] [Server thread/INFO]: [Thunder] Disabling Thunder v0.0.1
+[05:33:54] [Server thread/INFO]: [Thunder] The core is now disabled.
+[05:33:54] [Server thread/INFO]: [ActionHealth] Disabling ActionHealth v3.6.0
+[05:33:54] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.36
+[05:33:54] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.6.4
+[05:33:54] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.7.1-SNAPSHOT
+[05:33:54] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[05:33:54] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[05:33:54] [Server thread/INFO]: [SetHome] Disabling SetHome v6.2.3
+[05:33:54] [Server thread/INFO]: [GSit] Disabling GSit v2.3.2
+[05:33:54] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
+[05:33:54] [Server thread/INFO]: [LNPlugin] Disabling LNPlugin v1.1
+[05:33:54] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.3.2
+[05:33:54] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
+[05:33:54] [WebSocketConnectReadThread-112/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[05:33:54] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.3.2
+[05:33:54] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[05:33:54] [Server thread/INFO]: Saving players
+[05:33:54] [Server thread/INFO]: Saving worlds
+[05:33:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 4 entity chunks, 0 poi chunks in world 'world' in 0.08s
+[05:33:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 32 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[05:33:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[05:33:54] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[05:33:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[05:33:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[05:33:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[05:33:54] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
