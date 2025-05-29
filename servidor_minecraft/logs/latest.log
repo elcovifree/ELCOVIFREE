@@ -1,201 +1,203 @@
-[17:04:46] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.6+7-Ubuntu-120.04.1; Ubuntu null) on Linux 6.8.0-1027-azure (amd64)
-[17:04:46] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.1-57-master@b483da4 (2024-09-01T18:09:05Z) for Minecraft 1.21.1
-[17:04:46] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[17:04:47] [ServerMain/INFO]: [FileProviderSource] The spark plugin will not be loaded as this server bundles the spark profiler.
-[17:04:47] [ServerMain/INFO]: [PluginInitializerManager] Initialized 16 plugins
-[17:04:47] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (16):
+[17:08:20] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.6+7-Ubuntu-120.04.1; Ubuntu null) on Linux 6.8.0-1027-azure (amd64)
+[17:08:20] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.1-57-master@b483da4 (2024-09-01T18:09:05Z) for Minecraft 1.21.1
+[17:08:20] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:08:21] [ServerMain/INFO]: [FileProviderSource] The spark plugin will not be loaded as this server bundles the spark profiler.
+[17:08:21] [ServerMain/INFO]: [PluginInitializerManager] Initialized 16 plugins
+[17:08:21] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (16):
  - ActionHealth (3.6.0), Chunky (1.4.36), CustomKillMessages (1.0.0), DeathMessages (1.4.20), Essentials (2.21.1-dev+12-8455212), GSit (2.3.2), Geyser-Spigot (2.7.0-SNAPSHOT), Geyser-Spigot (2.7.1-SNAPSHOT), LNPlugin (1.1), SetHome (6.2.3), SimpleTpa (7.6), SkinsRestorer (15.6.4), Thunder (0.0.1), ViaBackwards (5.3.2), ViaVersion (5.3.2), floodgate (2.2.4-SNAPSHOT (b116-0e3163c))
-[17:04:52] [ServerMain/WARN]: resource-pack-id missing, using default of 7eb0412e-fc66-3477-89e2-acc365f73544
-[17:04:52] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[17:04:54] [ServerMain/INFO]: Loaded 1290 recipes
-[17:04:54] [ServerMain/INFO]: Loaded 1399 advancements
-[17:04:54] [Server thread/INFO]: Starting minecraft server version 1.21.1
-[17:04:54] [Server thread/INFO]: Loading properties
-[17:04:54] [Server thread/INFO]: This server is running Paper version 1.21.1-57-master@b483da4 (2024-09-01T18:09:05Z) (Implementing API version 1.21.1-R0.1-SNAPSHOT)
-[17:04:55] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[17:04:55] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:04:55] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:04:56] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and population gen parallelism of 1 threads
-[17:04:56] [Server thread/INFO]: Default game type: SURVIVAL
-[17:04:56] [Server thread/INFO]: Generating keypair
-[17:04:56] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:04:56] [Server thread/INFO]: Using epoll channel type
-[17:04:56] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[17:04:56] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[17:04:56] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Ambiguous plugin name 'Geyser-Spigot' for files 'plugins/Geyser-Spigot (1).jar' and 'plugins/geyser-spigot.jar' in 'plugins'
-[17:04:58] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[17:05:05] [Server thread/WARN]: Legacy plugin Thunder v0.0.1 does not specify an api-version.
-[17:05:05] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.3.2
-[17:05:05] [Server thread/INFO]: [ViaVersion] ViaVersion 5.3.2 is now loaded. Registering protocol transformers and injecting...
-[17:05:07] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[17:05:07] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[17:05:08] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[17:05:08] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[17:05:10] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
-[17:05:11] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[17:05:11] [Server thread/INFO]: [floodgate] Took 1,695ms to boot Floodgate
-[17:05:11] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.3.2
-[17:05:11] [Server thread/INFO]: [LNPlugin] Loading server plugin LNPlugin v1.1
-[17:05:11] [Server thread/INFO]: [GSit] Loading server plugin GSit v2.3.2
-[17:05:12] [Server thread/INFO]: [SetHome] Loading server plugin SetHome v6.2.3
-[17:05:12] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.7.1-SNAPSHOT
-[17:05:13] [Server thread/WARN]: [Geyser-Spigot] Your Geyser config is out of date! Please regenerate your config when possible.
-[17:05:13] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[17:05:13] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[17:05:13] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.6.4
-[17:05:13] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.36
-[17:05:13] [Server thread/INFO]: [ActionHealth] Loading server plugin ActionHealth v3.6.0
-[17:05:13] [Server thread/INFO]: [Thunder] Loading server plugin Thunder v0.0.1
-[17:05:13] [Server thread/INFO]: [CustomKill] Loading server plugin CustomKillMessages v1.0.0
-[17:05:13] [Server thread/INFO]: [DeathMessages] Loading server plugin DeathMessages v1.4.20
-[17:05:13] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.1-dev+12-8455212
-[17:05:13] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v7.6
-[17:05:13] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:05:13] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.6.4
-[17:05:15] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.1.
-[17:05:15] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
-[17:05:16] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[17:05:16] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[17:05:16] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[17:05:16] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[17:05:16] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[17:05:16] [Server thread/INFO]: Preparing level "world"
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.6.4
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 7ee6269
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
-[17:05:16] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
-[17:05:16] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:05:18] [Server thread/INFO]: Time elapsed: 1176 ms
-[17:05:18] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:05:18] [Server thread/INFO]: Time elapsed: 280 ms
-[17:05:18] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:05:18] [Server thread/INFO]: Time elapsed: 113 ms
-[17:05:18] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.3.2
-[17:05:18] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21-1.21.1 (767)
-[17:05:18] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
-[17:05:19] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.3.2
-[17:05:19] [Server thread/INFO]: [LNPlugin] Enabling LNPlugin v1.1
-[17:05:19] [Server thread/INFO]: [GSit] Enabling GSit v2.3.2
-[17:05:19] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
-[17:05:19] [Server thread/INFO]: [SetHome] Enabling SetHome v6.2.3
-[17:05:19] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.7.1-SNAPSHOT
-[17:05:20] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.36
-[17:05:20] [Server thread/INFO]: [ActionHealth] Enabling ActionHealth v3.6.0
-[17:05:20] [Server thread/INFO]: [Thunder] Enabling Thunder v0.0.1*
-[17:05:20] [Server thread/INFO]: [Thunder] The core is successfully enabled in version 0.0.1
-[17:05:20] [Server thread/INFO]: Developed by Awrul 
-[17:05:20] [Server thread/INFO]: [CustomKill] Enabling CustomKillMessages v1.0.0
-[17:05:20] [Server thread/INFO]: [DeathMessages] Enabling DeathMessages v1.4.20
-[17:05:20] [Server thread/INFO]: [DeathMessages] bStats Hook Enabled!
-[17:05:20] [Server thread/INFO]: DeathMessages 1.4.20 successfully loaded!
-[17:05:20] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.1-dev+12-8455212
-[17:05:21] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
-[17:05:21] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[17:05:21] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
-[17:05:21] [Server thread/INFO]: [Essentials] Loaded 43517 items from items.json.
-[17:05:21] [Server thread/INFO]: [Essentials] Using locale en
-[17:05:21] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[17:05:22] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[17:05:22] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
-[17:05:22] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v7.6
-[17:05:22] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[17:05:22] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 7.6
-[17:05:22] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
-[17:05:22] [Server thread/INFO]: [spark] Starting background profiler...
-[17:05:22] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[17:05:22] [Server thread/INFO]: [Geyser-Spigot] 
-[17:05:22] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.7.1-b824 (git-master-b296f10)
-[17:05:22] [Server thread/INFO]: [Geyser-Spigot] 
-[17:05:22] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[17:05:31] [epollEventLoopGroup-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 25565
-[17:05:31] [Server thread/INFO]: [Geyser-Spigot] Done (8.611s)! Run /geyser help for help!
-[17:05:31] [Server thread/INFO]: Done preparing level "world" (15.197s)
-[17:05:31] [Server thread/INFO]: Running delayed init tasks
-[17:05:31] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[17:05:31] [Craft Scheduler Thread - 9 - Essentials/INFO]: [Essentials] Fetching version information...
-[17:05:31] [Server thread/INFO]: Done (46.197s)! For help, type "help"
-[17:05:31] [Server thread/INFO]: Timings Reset
-[17:05:31] [Craft Scheduler Thread - 9 - Essentials/WARN]: [Essentials] You're 12 EssentialsX dev build(s) out of date!
-[17:05:31] [Craft Scheduler Thread - 9 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html
-[17:05:56] [User Authenticator #0/INFO]: UUID of player gootalive743 is 4ab8f632-3da0-3e3c-a370-bf97e6d1d0db
-[17:06:07] [Server thread/INFO]: gootalive743 joined the game
-[17:06:07] [Server thread/INFO]: gootalive743[/127.61.154.71:47641] logged in with entity id 96 at ([world]105.2953180107783, 40.0, 136.65723648964175)
-[17:06:33] [Server thread/INFO]: gootalive743 lost connection: Disconnected
-[17:06:33] [Server thread/INFO]: gootalive743 left the game
-[17:07:45] [Server thread/INFO]: Stopping the server
-[17:07:45] [Server thread/INFO]: Stopping server
-[17:07:45] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v7.6
-[17:07:45] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[17:07:45] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 7.6
-[17:07:45] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.1-dev+12-8455212
-[17:07:45] [Server thread/INFO]: [DeathMessages] Disabling DeathMessages v1.4.20
-[17:07:45] [Server thread/INFO]: [CustomKill] Disabling CustomKillMessages v1.0.0
-[17:07:45] [Server thread/INFO]: [Thunder] Disabling Thunder v0.0.1
-[17:07:45] [Server thread/INFO]: [Thunder] The core is now disabled.
-[17:07:45] [Server thread/INFO]: [ActionHealth] Disabling ActionHealth v3.6.0
-[17:07:45] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.36
-[17:07:45] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.6.4
-[17:07:45] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.7.1-SNAPSHOT
-[17:07:45] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[17:07:45] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[17:07:45] [Server thread/INFO]: [SetHome] Disabling SetHome v6.2.3
-[17:07:45] [Server thread/INFO]: [GSit] Disabling GSit v2.3.2
-[17:07:45] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
-[17:07:45] [Server thread/INFO]: [LNPlugin] Disabling LNPlugin v1.1
-[17:07:45] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.3.2
-[17:07:45] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
-[17:07:45] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.3.2
-[17:07:45] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[17:07:45] [Server thread/INFO]: Saving players
-[17:07:45] [WebSocketConnectReadThread-111/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[17:07:45] [Server thread/INFO]: Saving worlds
-[17:07:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world' in 0.07s
-[17:07:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world_nether' in 0.09s
-[17:07:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[17:07:45] [Server thread/INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world_the_end' in 0.03s
-[17:07:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[17:07:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:07:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:07:45] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17:08:25] [ServerMain/WARN]: resource-pack-id missing, using default of 737ca808-79e2-35ba-b4d4-548b3d191c38
+[17:08:25] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[17:08:27] [ServerMain/INFO]: Loaded 1290 recipes
+[17:08:27] [ServerMain/INFO]: Loaded 1399 advancements
+[17:08:27] [Server thread/INFO]: Starting minecraft server version 1.21.1
+[17:08:27] [Server thread/INFO]: Loading properties
+[17:08:27] [Server thread/INFO]: This server is running Paper version 1.21.1-57-master@b483da4 (2024-09-01T18:09:05Z) (Implementing API version 1.21.1-R0.1-SNAPSHOT)
+[17:08:28] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[17:08:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:08:28] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:08:29] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and population gen parallelism of 1 threads
+[17:08:29] [Server thread/INFO]: Default game type: SURVIVAL
+[17:08:29] [Server thread/INFO]: Generating keypair
+[17:08:29] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:08:29] [Server thread/INFO]: Using epoll channel type
+[17:08:29] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[17:08:29] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[17:08:29] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Ambiguous plugin name 'Geyser-Spigot' for files 'plugins/Geyser-Spigot (1).jar' and 'plugins/geyser-spigot.jar' in 'plugins'
+[17:08:31] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[17:08:38] [Server thread/WARN]: Legacy plugin Thunder v0.0.1 does not specify an api-version.
+[17:08:38] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.3.2
+[17:08:38] [Server thread/INFO]: [ViaVersion] ViaVersion 5.3.2 is now loaded. Registering protocol transformers and injecting...
+[17:08:39] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[17:08:39] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[17:08:41] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[17:08:41] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[17:08:42] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
+[17:08:43] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[17:08:43] [Server thread/INFO]: [floodgate] Took 1,438ms to boot Floodgate
+[17:08:43] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.3.2
+[17:08:43] [Server thread/INFO]: [LNPlugin] Loading server plugin LNPlugin v1.1
+[17:08:43] [Server thread/INFO]: [GSit] Loading server plugin GSit v2.3.2
+[17:08:44] [Server thread/INFO]: [SetHome] Loading server plugin SetHome v6.2.3
+[17:08:44] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.7.1-SNAPSHOT
+[17:08:45] [Server thread/WARN]: [Geyser-Spigot] Your Geyser config is out of date! Please regenerate your config when possible.
+[17:08:45] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[17:08:45] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[17:08:45] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.6.4
+[17:08:45] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.36
+[17:08:45] [Server thread/INFO]: [ActionHealth] Loading server plugin ActionHealth v3.6.0
+[17:08:45] [Server thread/INFO]: [Thunder] Loading server plugin Thunder v0.0.1
+[17:08:45] [Server thread/INFO]: [CustomKill] Loading server plugin CustomKillMessages v1.0.0
+[17:08:45] [Server thread/INFO]: [DeathMessages] Loading server plugin DeathMessages v1.4.20
+[17:08:45] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.1-dev+12-8455212
+[17:08:45] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v7.6
+[17:08:45] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:08:45] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.6.4
+[17:08:47] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.1.
+[17:08:47] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
+[17:08:48] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[17:08:48] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[17:08:48] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[17:08:48] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[17:08:48] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[17:08:48] [Server thread/INFO]: Preparing level "world"
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.6.4
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 7ee6269
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[17:08:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[17:08:48] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:08:49] [Server thread/INFO]: Time elapsed: 1048 ms
+[17:08:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:08:49] [Server thread/INFO]: Time elapsed: 215 ms
+[17:08:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:08:49] [Server thread/INFO]: Time elapsed: 94 ms
+[17:08:49] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.3.2
+[17:08:49] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21-1.21.1 (767)
+[17:08:49] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
+[17:08:50] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.3.2
+[17:08:50] [Server thread/INFO]: [LNPlugin] Enabling LNPlugin v1.1
+[17:08:50] [Server thread/INFO]: [GSit] Enabling GSit v2.3.2
+[17:08:50] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
+[17:08:50] [Server thread/INFO]: [SetHome] Enabling SetHome v6.2.3
+[17:08:50] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.7.1-SNAPSHOT
+[17:08:51] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.36
+[17:08:51] [Server thread/INFO]: [ActionHealth] Enabling ActionHealth v3.6.0
+[17:08:51] [Server thread/INFO]: [Thunder] Enabling Thunder v0.0.1*
+[17:08:51] [Server thread/INFO]: [Thunder] The core is successfully enabled in version 0.0.1
+[17:08:51] [Server thread/INFO]: Developed by Awrul 
+[17:08:51] [Server thread/INFO]: [CustomKill] Enabling CustomKillMessages v1.0.0
+[17:08:51] [Server thread/INFO]: [DeathMessages] Enabling DeathMessages v1.4.20
+[17:08:51] [Server thread/INFO]: [DeathMessages] bStats Hook Enabled!
+[17:08:51] [Server thread/INFO]: DeathMessages 1.4.20 successfully loaded!
+[17:08:51] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.1-dev+12-8455212
+[17:08:52] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[17:08:52] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[17:08:52] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[17:08:52] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[17:08:52] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[17:08:53] [Server thread/INFO]: [Essentials] Loaded 43517 items from items.json.
+[17:08:53] [Server thread/INFO]: [Essentials] Using locale en
+[17:08:53] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[17:08:53] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[17:08:53] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[17:08:53] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v7.6
+[17:08:53] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[17:08:53] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 7.6
+[17:08:53] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[17:08:53] [Server thread/INFO]: [spark] Starting background profiler...
+[17:08:54] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[17:08:54] [Server thread/INFO]: [Geyser-Spigot] 
+[17:08:54] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.7.1-b824 (git-master-b296f10)
+[17:08:54] [Server thread/INFO]: [Geyser-Spigot] 
+[17:08:54] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[17:09:03] [epollEventLoopGroup-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 25565
+[17:09:03] [Server thread/INFO]: [Geyser-Spigot] Done (9.157s)! Run /geyser help for help!
+[17:09:03] [Server thread/INFO]: Done preparing level "world" (15.371s)
+[17:09:03] [Server thread/INFO]: Running delayed init tasks
+[17:09:03] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[17:09:03] [Craft Scheduler Thread - 9 - Essentials/INFO]: [Essentials] Fetching version information...
+[17:09:03] [Server thread/INFO]: Done (43.935s)! For help, type "help"
+[17:09:03] [Server thread/INFO]: Timings Reset
+[17:09:03] [Craft Scheduler Thread - 9 - Essentials/WARN]: [Essentials] You're 12 EssentialsX dev build(s) out of date!
+[17:09:03] [Craft Scheduler Thread - 9 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html
+[17:09:56] [User Authenticator #0/INFO]: UUID of player gootalive743 is 4ab8f632-3da0-3e3c-a370-bf97e6d1d0db
+[17:10:00] [Server thread/INFO]: gootalive743 joined the game
+[17:10:00] [Server thread/INFO]: gootalive743[/127.61.154.71:49471] logged in with entity id 96 at ([world]100.76857428276935, 40.0, 130.12621808302447)
+[17:10:22] [Server thread/INFO]: gootalive743 issued server command: /hoº
+[17:10:26] [Server thread/INFO]: gootalive743 issued server command: /home
+[17:15:49] [Server thread/INFO]: gootalive743 lost connection: Disconnected
+[17:15:49] [Server thread/INFO]: gootalive743 left the game
+[17:16:21] [Server thread/INFO]: Stopping the server
+[17:16:22] [Server thread/INFO]: Stopping server
+[17:16:22] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v7.6
+[17:16:22] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[17:16:22] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 7.6
+[17:16:22] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.1-dev+12-8455212
+[17:16:22] [Server thread/INFO]: [DeathMessages] Disabling DeathMessages v1.4.20
+[17:16:22] [Server thread/INFO]: [CustomKill] Disabling CustomKillMessages v1.0.0
+[17:16:22] [Server thread/INFO]: [Thunder] Disabling Thunder v0.0.1
+[17:16:22] [Server thread/INFO]: [Thunder] The core is now disabled.
+[17:16:22] [Server thread/INFO]: [ActionHealth] Disabling ActionHealth v3.6.0
+[17:16:22] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.36
+[17:16:22] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.6.4
+[17:16:22] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.7.1-SNAPSHOT
+[17:16:22] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[17:16:22] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[17:16:22] [Server thread/INFO]: [SetHome] Disabling SetHome v6.2.3
+[17:16:22] [Server thread/INFO]: [GSit] Disabling GSit v2.3.2
+[17:16:22] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
+[17:16:22] [Server thread/INFO]: [LNPlugin] Disabling LNPlugin v1.1
+[17:16:22] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.3.2
+[17:16:22] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
+[17:16:22] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.3.2
+[17:16:22] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[17:16:22] [Server thread/INFO]: Saving players
+[17:16:22] [WebSocketConnectReadThread-110/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[17:16:22] [Server thread/INFO]: Saving worlds
+[17:16:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 4 entity chunks, 0 poi chunks in world 'world' in 0.03s
+[17:16:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 31 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[17:16:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[17:16:22] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[17:16:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:16:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:16:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:16:22] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
