@@ -239,3 +239,6 @@
 [13:08:14] [Server thread/WARN]: Ignoring unknown attribute 'minecraft:flying_speed'
 [13:08:14] [Server thread/WARN]: Ignoring unknown attribute 'minecraft:follow_range'
 [13:11:32] [Server thread/INFO]: gootalive743 issued server command: /home
+[13:28:19] [Server thread/INFO]: gootalive743 issued server command: /home
+[13:29:00] [Server thread/INFO]: [DM] gootalive743 voló sin alas gracias a %killer%... el aterrizaje fue menos espectacular (Extra: World:world, X:108, Y:40, Z:147)
+[13:29:05] [Server thread/INFO]: gootalive743 issued server command: /back
