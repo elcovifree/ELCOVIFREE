@@ -975,8 +975,11 @@
   },
   "minecraft:husbandry/bred_all_animals": {
     "criteria": {
+      "minecraft:mooshroom": "2025-06-02 15:55:49 +0000",
+      "minecraft:cow": "2025-06-02 15:55:44 +0000",
       "minecraft:chicken": "2025-05-02 10:36:43 +0000",
-      "minecraft:turtle": "2025-05-02 15:42:34 +0000"
+      "minecraft:turtle": "2025-05-02 15:42:34 +0000",
+      "minecraft:sheep": "2025-06-02 15:55:41 +0000"
     },
     "done": false
   },
