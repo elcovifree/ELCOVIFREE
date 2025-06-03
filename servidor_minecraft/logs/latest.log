@@ -151,3 +151,5 @@
 [14:59:57] [User Authenticator #0/INFO]: UUID of player gootalive743 is 4ab8f632-3da0-3e3c-a370-bf97e6d1d0db
 [15:00:00] [Server thread/INFO]: gootalive743 joined the game
 [15:00:00] [Server thread/INFO]: gootalive743[/127.61.154.71:49233] logged in with entity id 96 at ([world]103.97922934696588, 39.5, 124.3001750697198)
+[15:25:17] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /give gootalive743 minecraft:quartz 29
+[15:25:17] [Server thread/INFO]: Giving 29 of quartz to gootalive743.
