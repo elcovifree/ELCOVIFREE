@@ -16,18 +16,18 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1748881159937
-  login: 1748962800797
+  logout: 1749044536162
+  login: 1749044473843
 money: '0'
 last-account-name: gootalive743
 logoutlocation:
   world: 15b2a69c-926f-4da5-bc59-d4264a1fbe79
   world-name: world
-  x: 103.97922934696588
-  y: 39.5
-  z: 124.3001750697198
-  yaw: 144.30369567871094
-  pitch: 57.90021896362305
+  x: 106.47351729926231
+  y: 40.0
+  z: 149.40149099903348
+  yaw: 14.706024169921875
+  pitch: 21.749988555908203
 lastlocation:
   world: 15b2a69c-926f-4da5-bc59-d4264a1fbe79
   world-name: world
