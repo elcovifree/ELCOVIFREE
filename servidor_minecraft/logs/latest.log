@@ -178,3 +178,5 @@
 [12:14:00] [Server thread/INFO]: Giving 64 of comparator to gootalive743.
 [12:18:25] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /give gootalive743 minecraft:redstone 64
 [12:18:25] [Server thread/INFO]: Giving 64 of redstone to gootalive743.
+[12:25:07] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /give gootalive743 minecraft:hopper 240
+[12:25:07] [Server thread/INFO]: Giving 240 of hopper to gootalive743.
